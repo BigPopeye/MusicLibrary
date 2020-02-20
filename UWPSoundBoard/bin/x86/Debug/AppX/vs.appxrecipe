@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-V6T1S8B</Machine>
+    <WindowsUser>olive</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>b5b1863f-8e06-4f21-ab78-2b8623a44fc6</PackageIdentityName>
+    <PackageIdentityPublisher>CN=rosem</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>5225226729984763C50C5D192F110E7288FF4CFC1E372B927DDEAD4E141FD7A1</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>b5b1863f-8e06-4f21-ab78-2b8623a44fc6_1.0.0.0_x86__j1yxp4wm8jwec</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>b5b1863f-8e06-4f21-ab78-2b8623a44fc6_j1yxp4wm8jwec!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>b5b1863f-8e06-4f21-ab78-2b8623a44fc6</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=rosem</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-20T07:58:02.475</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MusicLibrary.exe">
+      <PackagePath>entrypoint\MusicLibrary.exe</PackagePath>
+      <Modified>2020-02-20T07:58:01.736</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2019-07-22T22:01:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2019-03-19T02:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Animals\Cat.wav">
+      <PackagePath>Assets\Audio\Animals\Cat.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Animals\Cow.wav">
+      <PackagePath>Assets\Audio\Animals\Cow.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.819</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Cartoons\Gun.wav">
+      <PackagePath>Assets\Audio\Cartoons\Gun.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Cartoons\Spring.wav">
+      <PackagePath>Assets\Audio\Cartoons\Spring.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Taunts\Clock.wav">
+      <PackagePath>Assets\Audio\Taunts\Clock.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Taunts\LOL.wav">
+      <PackagePath>Assets\Audio\Taunts\LOL.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Warnings\Ship.wav">
+      <PackagePath>Assets\Audio\Warnings\Ship.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Audio\Warnings\Siren.wav">
+      <PackagePath>Assets\Audio\Warnings\Siren.wav</PackagePath>
+      <Modified>2020-02-18T04:02:46.846</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Icons\animals.png">
+      <PackagePath>Assets\Icons\animals.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Icons\cartoon.png">
+      <PackagePath>Assets\Icons\cartoon.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Icons\taunt.png">
+      <PackagePath>Assets\Icons\taunt.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Icons\warning.png">
+      <PackagePath>Assets\Icons\warning.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Animals\Cat.png">
+      <PackagePath>Assets\Images\Animals\Cat.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Animals\Cow.png">
+      <PackagePath>Assets\Images\Animals\Cow.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.849</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Cartoons\Gun.png">
+      <PackagePath>Assets\Images\Cartoons\Gun.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Cartoons\Spring.png">
+      <PackagePath>Assets\Images\Cartoons\Spring.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.850</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Taunts\Clock.png">
+      <PackagePath>Assets\Images\Taunts\Clock.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Taunts\LOL.png">
+      <PackagePath>Assets\Images\Taunts\LOL.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.851</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Warnings\Ship.png">
+      <PackagePath>Assets\Images\Warnings\Ship.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.852</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Images\Warnings\Siren.png">
+      <PackagePath>Assets\Images\Warnings\Siren.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\1240x1240.png">
+      <PackagePath>Assets\PackageAppXManifest\1240x1240.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.854</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\1240x600.png">
+      <PackagePath>Assets\PackageAppXManifest\1240x600.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.854</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\24x24-large.png">
+      <PackagePath>Assets\PackageAppXManifest\24x24-large.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.854</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\24x24.png">
+      <PackagePath>Assets\PackageAppXManifest\24x24.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\300x300.png">
+      <PackagePath>Assets\PackageAppXManifest\300x300.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\310x310.png">
+      <PackagePath>Assets\PackageAppXManifest\310x310.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.856</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\50x50-large.png">
+      <PackagePath>Assets\PackageAppXManifest\50x50-large.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\50x50.png">
+      <PackagePath>Assets\PackageAppXManifest\50x50.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\620x300.png">
+      <PackagePath>Assets\PackageAppXManifest\620x300.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.857</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\71x71-large.png">
+      <PackagePath>Assets\PackageAppXManifest\71x71-large.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\71x71.png">
+      <PackagePath>Assets\PackageAppXManifest\71x71.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.858</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\88x88-large.png">
+      <PackagePath>Assets\PackageAppXManifest\88x88-large.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\88x88.png">
+      <PackagePath>Assets\PackageAppXManifest\88x88.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.859</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2020-02-18T04:02:46.853</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-02-18T04:02:46.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2020-02-18T04:02:46.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MusicLibrary.xr.xml">
+      <PackagePath>MusicLibrary.xr.xml</PackagePath>
+      <Modified>2020-02-20T07:58:01.616</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2020-02-20T07:58:01.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\AllSongsPage.xbf">
+      <PackagePath>AllSongsPage.xbf</PackagePath>
+      <Modified>2020-02-20T07:58:01.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\GenresPage.xbf">
+      <PackagePath>GenresPage.xbf</PackagePath>
+      <Modified>2020-02-20T07:58:01.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2020-02-20T07:58:01.633</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2019-03-19T01:33:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2020-02-20T07:58:01.949</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\olive\source\repos\Github\MusicLibrary\UWPSoundBoard\bin\x86\Debug\Core\MusicLibrary.exe">
+      <PackagePath>MusicLibrary.exe</PackagePath>
+      <Modified>2020-02-20T07:58:02.454</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27909.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
