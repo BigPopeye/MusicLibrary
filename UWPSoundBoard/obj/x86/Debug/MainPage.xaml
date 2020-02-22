@@ -28,6 +28,7 @@
                     RelativePanel.RightOf="HamburgerButton"
                     />
         </RelativePanel>
+        
         <SplitView x:ConnectionId='2' Grid.Row="1" Name="MySplitView"
                    DisplayMode="CompactInline"
                    CompactPaneLength="50"
@@ -38,6 +39,7 @@
                           ItemClick="MenuItemsListView_ItemClick">-->
                 <ListView x:ConnectionId='3' x:Name="MenuItemsListView" 
                           IsItemClickEnabled="True">
+                    
                     <!--<ListView.ItemTemplate>
                         <DataTemplate x:DataType="data:MenuItem" >
                             <StackPanel Orientation="Horizontal">
