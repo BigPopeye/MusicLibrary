@@ -10,6 +10,13 @@ namespace MusicLibrary.Model
     {
         Animals,
         Cartoons,
+        Electronic,
+        HipHop,
+        Instrumental,
+        Metal,
+        Pop,
+        Rock,
+        Music,
         Taunts,
         Warnings
     }
@@ -23,7 +30,7 @@ namespace MusicLibrary.Model
         {
             Name = name;
             Category = category;
-            AudioFile = $"/Assets/Audio/{category}/{name}.wav";
+            AudioFile = $"/Assets/Audio/{category}/{name}.mp3";
             ImageFile = $"/Assets/Images/{category}/{name}.png";
         }
     }

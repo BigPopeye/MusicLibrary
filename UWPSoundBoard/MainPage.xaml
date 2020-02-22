@@ -95,12 +95,11 @@
                             FontFamily="Segoe MDL2 Assets"
                             Click="SingleAddPlaylistButton_Click"
                             Visibility="Visible"/>
-
-
                 </ListView>
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame x:Name="contentFrame" />
+                
                 <!--<Grid Margin="20,20,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
