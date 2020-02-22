@@ -1,8 +1,6 @@
-
-.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-wal
-.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-shm
-.vs/MusicLibrary/v16/Server/sqlite3/storage.ide
-.vs/MusicLibrary/v16/.suo
+.vs/*
+UWPSoundBoard/bin/*
+UWPSoundBoard/obj/*
 UWPSoundBoard/bin/x86/Debug/AllSongsPage.xbf
 UWPSoundBoard/bin/x86/Debug/App.xbf
 UWPSoundBoard/bin/x86/Debug/AppX/.vs/UWPSoundBoard/v16/.suo
