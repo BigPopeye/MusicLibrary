@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj": {}
+    "C:\\Users\\User\\Documents\\Kal Academy\\2. Sound Board\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj": {
+    "C:\\Users\\User\\Documents\\Kal Academy\\2. Sound Board\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\Kal Academy\\2. Sound Board\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
         "projectName": "MusicLibrary",
-        "projectPath": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
-        "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\Kal Academy\\2. Sound Board\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\Kal Academy\\2. Sound Board\\MusicLibray\\UWPSoundBoard\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

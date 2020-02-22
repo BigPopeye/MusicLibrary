@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-V6T1S8B</Machine>
-    <WindowsUser>olive</WindowsUser>
+    <Machine>DESKTOP-PDGMMPA</Machine>
+    <WindowsUser>User</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b5b1863f-8e06-4f21-ab78-2b8623a44fc6</PackageIdentityName>
     <PackageIdentityPublisher>CN=rosem</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>D8AA1F98310C8A241D97189C31D555A48C30CBAA0E01962CFFDC3868982F3010</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>b5b1863f-8e06-4f21-ab78-2b8623a44fc6_1.0.0.0_x86__j1yxp4wm8jwec</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>b5b1863f-8e06-4f21-ab78-2b8623a44fc6_j1yxp4wm8jwec!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-22T20:29:51.147</Modified>
+      <Modified>2020-02-22T22:15:45.914</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MusicLibrary.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\MusicLibrary.exe">
       <PackagePath>entrypoint\MusicLibrary.exe</PackagePath>
-      <Modified>2020-02-22T20:29:50.568</Modified>
+      <Modified>2020-02-22T22:15:44.616</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -46,207 +46,271 @@
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-19T02:36:56.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Animals\Cat.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Animals\Cat.wav">
       <PackagePath>Assets\Audio\Animals\Cat.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.816</Modified>
+      <Modified>2020-02-21T19:46:28.833</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Animals\Cow.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Animals\Cow.wav">
       <PackagePath>Assets\Audio\Animals\Cow.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.819</Modified>
+      <Modified>2020-02-21T19:46:28.842</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Cartoons\Gun.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Cartoons\Gun.wav">
       <PackagePath>Assets\Audio\Cartoons\Gun.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.822</Modified>
+      <Modified>2020-02-21T19:46:28.852</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Cartoons\Spring.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Cartoons\Spring.wav">
       <PackagePath>Assets\Audio\Cartoons\Spring.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.824</Modified>
+      <Modified>2020-02-21T19:46:28.860</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Taunts\Clock.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Taunts\Clock.wav">
       <PackagePath>Assets\Audio\Taunts\Clock.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.831</Modified>
+      <Modified>2020-02-21T19:46:28.875</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Taunts\LOL.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Taunts\LOL.wav">
       <PackagePath>Assets\Audio\Taunts\LOL.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.836</Modified>
+      <Modified>2020-02-21T19:46:28.888</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Warnings\Ship.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Warnings\Ship.wav">
       <PackagePath>Assets\Audio\Warnings\Ship.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.839</Modified>
+      <Modified>2020-02-21T19:46:28.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Audio\Warnings\Siren.wav">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Warnings\Siren.wav">
       <PackagePath>Assets\Audio\Warnings\Siren.wav</PackagePath>
-      <Modified>2020-02-18T04:02:46.846</Modified>
+      <Modified>2020-02-21T19:46:28.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Icons\animals.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Pop\3.mp3">
+      <PackagePath>Assets\Audio\Pop\3.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.110</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Pop\Catch My Breath.mp3">
+      <PackagePath>Assets\Audio\Pop\Catch My Breath.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Electronic\Constellation Of Tatyana.mp3">
+      <PackagePath>Assets\Audio\Electronic\Constellation Of Tatyana.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Instrumental\Für immer.mp3">
+      <PackagePath>Assets\Audio\Instrumental\Für immer.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\HipHop\Hey Mama.mp3">
+      <PackagePath>Assets\Audio\HipHop\Hey Mama.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Rock\I Hate Myself For Loving You.mp3">
+      <PackagePath>Assets\Audio\Rock\I Hate Myself For Loving You.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.291</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\HipHop\La La Land.mp3">
+      <PackagePath>Assets\Audio\HipHop\La La Land.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.316</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Metal\Last Of The Wilds.mp3">
+      <PackagePath>Assets\Audio\Metal\Last Of The Wilds.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.352</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Electronic\Memories Of You.mp3">
+      <PackagePath>Assets\Audio\Electronic\Memories Of You.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.380</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Instrumental\Second Waltz.mp3">
+      <PackagePath>Assets\Audio\Instrumental\Second Waltz.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\HipHop\Sky High.mp3">
+      <PackagePath>Assets\Audio\HipHop\Sky High.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.731</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Pop\The Tide Is High.mp3">
+      <PackagePath>Assets\Audio\Pop\The Tide Is High.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Audio\Pop\Wrecking Ball.mp3">
+      <PackagePath>Assets\Audio\Pop\Wrecking Ball.mp3</PackagePath>
+      <Modified>2020-02-22T21:08:12.808</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Icons\animals.png">
       <PackagePath>Assets\Icons\animals.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.847</Modified>
+      <Modified>2020-02-21T19:46:28.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Icons\cartoon.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Icons\cartoon.png">
       <PackagePath>Assets\Icons\cartoon.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.847</Modified>
+      <Modified>2020-02-21T19:46:28.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Icons\taunt.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Icons\taunt.png">
       <PackagePath>Assets\Icons\taunt.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.848</Modified>
+      <Modified>2020-02-21T19:46:28.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Icons\warning.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Icons\warning.png">
       <PackagePath>Assets\Icons\warning.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.848</Modified>
+      <Modified>2020-02-21T19:46:28.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Animals\Cat.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Animals\Cat.png">
       <PackagePath>Assets\Images\Animals\Cat.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.849</Modified>
+      <Modified>2020-02-21T19:46:28.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Animals\Cow.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Animals\Cow.png">
       <PackagePath>Assets\Images\Animals\Cow.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.849</Modified>
+      <Modified>2020-02-21T19:46:28.924</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Cartoons\Gun.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Cartoons\Gun.png">
       <PackagePath>Assets\Images\Cartoons\Gun.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.850</Modified>
+      <Modified>2020-02-21T19:46:28.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Cartoons\Spring.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Cartoons\Spring.png">
       <PackagePath>Assets\Images\Cartoons\Spring.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.850</Modified>
+      <Modified>2020-02-21T19:46:28.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Taunts\Clock.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Pop\3.png">
+      <PackagePath>Assets\Images\Pop\3.png</PackagePath>
+      <Modified>2020-02-22T21:09:08.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Pop\Catch My Breath.png">
+      <PackagePath>Assets\Images\Pop\Catch My Breath.png</PackagePath>
+      <Modified>2020-02-22T21:09:08.729</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Electronic\Constellation Of Tatyana.png">
+      <PackagePath>Assets\Images\Electronic\Constellation Of Tatyana.png</PackagePath>
+      <Modified>2020-02-22T21:09:08.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Taunts\Clock.png">
       <PackagePath>Assets\Images\Taunts\Clock.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.851</Modified>
+      <Modified>2020-02-21T19:46:28.934</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Taunts\LOL.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Taunts\LOL.png">
       <PackagePath>Assets\Images\Taunts\LOL.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.851</Modified>
+      <Modified>2020-02-21T19:46:28.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Warnings\Ship.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Warnings\Ship.png">
       <PackagePath>Assets\Images\Warnings\Ship.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.852</Modified>
+      <Modified>2020-02-21T19:46:28.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Images\Warnings\Siren.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Images\Warnings\Siren.png">
       <PackagePath>Assets\Images\Warnings\Siren.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.853</Modified>
+      <Modified>2020-02-21T19:46:28.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\1240x1240.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\1240x1240.png">
       <PackagePath>Assets\PackageAppXManifest\1240x1240.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.854</Modified>
+      <Modified>2020-02-21T19:46:28.947</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\1240x600.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\1240x600.png">
       <PackagePath>Assets\PackageAppXManifest\1240x600.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.854</Modified>
+      <Modified>2020-02-21T19:46:28.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\24x24-large.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\24x24-large.png">
       <PackagePath>Assets\PackageAppXManifest\24x24-large.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.854</Modified>
+      <Modified>2020-02-21T19:46:28.950</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\24x24.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\24x24.png">
       <PackagePath>Assets\PackageAppXManifest\24x24.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.855</Modified>
+      <Modified>2020-02-21T19:46:28.951</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\300x300.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\300x300.png">
       <PackagePath>Assets\PackageAppXManifest\300x300.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.855</Modified>
+      <Modified>2020-02-21T19:46:28.956</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\310x310.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\310x310.png">
       <PackagePath>Assets\PackageAppXManifest\310x310.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.856</Modified>
+      <Modified>2020-02-21T19:46:28.960</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\50x50-large.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\50x50-large.png">
       <PackagePath>Assets\PackageAppXManifest\50x50-large.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.857</Modified>
+      <Modified>2020-02-21T19:46:28.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\50x50.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\50x50.png">
       <PackagePath>Assets\PackageAppXManifest\50x50.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.857</Modified>
+      <Modified>2020-02-21T19:46:28.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\620x300.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\620x300.png">
       <PackagePath>Assets\PackageAppXManifest\620x300.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.857</Modified>
+      <Modified>2020-02-21T19:46:28.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\71x71-large.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\71x71-large.png">
       <PackagePath>Assets\PackageAppXManifest\71x71-large.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.858</Modified>
+      <Modified>2020-02-21T19:46:28.978</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\71x71.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\71x71.png">
       <PackagePath>Assets\PackageAppXManifest\71x71.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.858</Modified>
+      <Modified>2020-02-21T19:46:28.981</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\88x88-large.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\88x88-large.png">
       <PackagePath>Assets\PackageAppXManifest\88x88-large.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.859</Modified>
+      <Modified>2020-02-21T19:46:28.983</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\PackageAppXManifest\88x88.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\PackageAppXManifest\88x88.png">
       <PackagePath>Assets\PackageAppXManifest\88x88.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.859</Modified>
+      <Modified>2020-02-21T19:46:28.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-02-18T04:02:46.853</Modified>
+      <Modified>2020-02-21T19:46:28.943</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.860</Modified>
+      <Modified>2020-02-21T19:46:28.989</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.860</Modified>
+      <Modified>2020-02-21T19:46:28.994</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.861</Modified>
+      <Modified>2020-02-21T19:46:28.996</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.861</Modified>
+      <Modified>2020-02-21T19:46:28.998</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.862</Modified>
+      <Modified>2020-02-21T19:46:28.999</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-18T04:02:46.862</Modified>
+      <Modified>2020-02-21T19:46:29.001</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-02-18T04:02:46.866</Modified>
+      <Modified>2020-02-21T19:46:29.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MusicLibrary.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\MusicLibrary.xr.xml">
       <PackagePath>MusicLibrary.xr.xml</PackagePath>
-      <Modified>2020-02-22T20:29:50.427</Modified>
+      <Modified>2020-02-22T22:15:44.221</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-22T20:29:50.443</Modified>
+      <Modified>2020-02-22T22:15:44.277</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\AllSongsPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\AllSongsPage.xbf">
       <PackagePath>AllSongsPage.xbf</PackagePath>
-      <Modified>2020-02-22T20:29:50.443</Modified>
+      <Modified>2020-02-22T22:15:44.277</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\GenresPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\GenresPage.xbf">
       <PackagePath>GenresPage.xbf</PackagePath>
-      <Modified>2020-02-22T20:29:50.443</Modified>
+      <Modified>2020-02-22T22:15:44.278</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-22T20:29:50.443</Modified>
+      <Modified>2020-02-22T22:15:44.278</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2019-03-19T01:33:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-22T00:46:57.965</Modified>
+      <Modified>2020-02-22T21:58:28.544</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\olive\source\repos\MusicLibrary2\MusicLibrary\UWPSoundBoard\bin\x86\Debug\Core\MusicLibrary.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Kal Academy\2. Sound Board\MusicLibray\UWPSoundBoard\bin\x86\Debug\Core\MusicLibrary.exe">
       <PackagePath>MusicLibrary.exe</PackagePath>
-      <Modified>2020-02-22T20:29:51.131</Modified>
+      <Modified>2020-02-22T22:15:45.900</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,19 @@ Assets\Audio\Animals\Cat.wav
 Assets\Audio\Animals\Cow.wav
 Assets\Audio\Cartoons\Gun.wav
 Assets\Audio\Cartoons\Spring.wav
+Assets\Audio\Electronic\Constellation Of Tatyana.mp3
+Assets\Audio\Electronic\Memories Of You.mp3
+Assets\Audio\HipHop\Hey Mama.mp3
+Assets\Audio\HipHop\La La Land.mp3
+Assets\Audio\HipHop\Sky High.mp3
+Assets\Audio\Instrumental\Für immer.mp3
+Assets\Audio\Instrumental\Second Waltz.mp3
+Assets\Audio\Metal\Last Of The Wilds.mp3
+Assets\Audio\Pop\3.mp3
+Assets\Audio\Pop\Catch My Breath.mp3
+Assets\Audio\Pop\The Tide Is High.mp3
+Assets\Audio\Pop\Wrecking Ball.mp3
+Assets\Audio\Rock\I Hate Myself For Loving You.mp3
 Assets\Audio\Taunts\Clock.wav
 Assets\Audio\Taunts\LOL.wav
 Assets\Audio\Warnings\Ship.wav
@@ -15,6 +28,9 @@ Assets\Images\Animals\Cat.png
 Assets\Images\Animals\Cow.png
 Assets\Images\Cartoons\Gun.png
 Assets\Images\Cartoons\Spring.png
+Assets\Images\Electronic\Constellation Of Tatyana.png
+Assets\Images\Pop\3.png
+Assets\Images\Pop\Catch My Breath.png
 Assets\Images\Taunts\Clock.png
 Assets\Images\Taunts\LOL.png
 Assets\Images\Warnings\Ship.png

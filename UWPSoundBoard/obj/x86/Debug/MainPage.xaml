@@ -99,6 +99,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame x:ConnectionId='9' x:Name="contentFrame" />
+                
                 <!--<Grid Margin="20,20,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />

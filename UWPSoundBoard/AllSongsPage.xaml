@@ -29,8 +29,24 @@
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="data:Sound">
                                 <StackPanel Orientation="Horizontal">
-                                    <Image Name="MyImage" Height="80" Width="60" Source="{x:Bind ImageFile}"/>
-                                    <TextBlock Text="hello" Width="100" VerticalAlignment="Center">hehe</TextBlock>
+                                    <Ellipse Width="40" Height="40">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="{x:Bind ImageFile}"/>
+                                        </Ellipse.Fill>
+                                     </Ellipse>
+
+                                    <TextBlock Text="{x:Bind Name}" 
+                                               Width="250" 
+                                               VerticalAlignment="Center" 
+                                               FontSize="15">
+                                    </TextBlock>
+
+                                    <TextBlock Text="{x:Bind Category}" 
+                                               Width="100" 
+                                               VerticalAlignment="Center"
+                                               FontSize="15">
+                                    
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
