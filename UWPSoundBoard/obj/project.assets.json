@@ -4098,7 +4098,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -8151,18 +8151,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\olive\\.nuget\\packages\\": {},
+    "C:\\Users\\Prachi\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olive\\source\\repos\\Github\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Prachi\\Documents\\GitHub\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
       "projectName": "MusicLibrary",
-      "projectPath": "C:\\Users\\olive\\source\\repos\\Github\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
-      "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\olive\\source\\repos\\Github\\MusicLibrary\\UWPSoundBoard\\obj\\",
+      "projectPath": "C:\\Users\\Prachi\\Documents\\GitHub\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
+      "packagesPath": "C:\\Users\\Prachi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Prachi\\Documents\\GitHub\\MusicLibray\\UWPSoundBoard\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8170,7 +8170,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\olive\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Prachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
