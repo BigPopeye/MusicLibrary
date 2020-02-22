@@ -10,7 +10,7 @@
   <Identity Name="b5b1863f-8e06-4f21-ab78-2b8623a44fc6" Publisher="CN=rosem" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="b5b1863f-8e06-4f21-ab78-2b8623a44fc6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>UWPSoundBoard</DisplayName>
+    <DisplayName>MusicLibrary</DisplayName>
     <PublisherDisplayName>rosem</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -23,8 +23,8 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="MusicLibrary.exe" EntryPoint="UWPSoundBoard.App">
-      <uap:VisualElements DisplayName="UWPSoundBoard" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="UWPSoundBoard" BackgroundColor="transparent">
+    <Application Id="App" Executable="MusicLibrary.exe" EntryPoint="MusicLibrary.App">
+      <uap:VisualElements DisplayName="MusicLibrary" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="MusicLibrary" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>

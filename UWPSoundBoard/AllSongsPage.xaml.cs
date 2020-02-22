@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.BulkAccess;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,13 +26,19 @@ namespace MusicLibrary
     public sealed partial class AllSongsPage : Page
     {
         private ObservableCollection<Sound> sounds;
+
         public AllSongsPage()
         {
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
             SoundManager.GetAllSounds(sounds);
 
-           
         }
+        private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var sound = (Sound)e.ClickedItem;
+            MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
+        }
+
     }
 }

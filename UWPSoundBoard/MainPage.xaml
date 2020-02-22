@@ -95,8 +95,6 @@
                             FontFamily="Segoe MDL2 Assets"
                             Click="SingleAddPlaylistButton_Click"
                             Visibility="Visible"/>
-
-
                 </ListView>
             </SplitView.Pane>
             <SplitView.Content>

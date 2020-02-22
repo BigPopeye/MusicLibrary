@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olive\\source\\repos\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj": {}
+    "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olive\\source\\repos\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj": {
+    "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olive\\source\\repos\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
         "projectName": "MusicLibrary",
-        "projectPath": "C:\\Users\\olive\\source\\repos\\MusicLibray\\UWPSoundBoard\\MusicLibrary.csproj",
+        "projectPath": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\MusicLibrary.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olive\\source\\repos\\MusicLibray\\UWPSoundBoard\\obj\\",
+        "outputPath": "C:\\Users\\olive\\source\\repos\\MusicLibrary2\\MusicLibrary\\UWPSoundBoard\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

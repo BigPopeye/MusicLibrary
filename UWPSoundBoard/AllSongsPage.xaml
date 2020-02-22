@@ -24,6 +24,7 @@
                               SelectionMode="None"
                               IsItemClickEnabled="True"
                               ItemsSource="{x:Bind sounds}"
+                              ItemClick="SoundGridView_ItemClick"
                               >
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="data:Sound">
