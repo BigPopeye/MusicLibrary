@@ -12,29 +12,24 @@ namespace MusicLibrary.Model
         private static List<Sound> getSounds()
         {
             var sounds = new List<Sound>();
-            //sounds.Add(new Sound("Cow", SoundCategory.Animals));
-            //sounds.Add(new Sound("Cat", SoundCategory.Animals));
 
-            //sounds.Add(new Sound("Gun", SoundCategory.Cartoons));
-            //sounds.Add(new Sound("Spring", SoundCategory.Cartoons));
+            sounds.Add(new Sound("Constellation Of Tatyana", SoundCategory.Electronic, "Stars Of The Pacific Ocean"));
+            sounds.Add(new Sound("Memories Of You", SoundCategory.Electronic, "Album Name"));
 
-            //sounds.Add(new Sound("Clock", SoundCategory.Taunts));
-            //sounds.Add(new Sound("LOL", SoundCategory.Taunts));
+            sounds.Add(new Sound("Hey Mama", SoundCategory.HipHop, "Album Name"));
+            sounds.Add(new Sound("Sky High", SoundCategory.HipHop, "Album Name"));
+            sounds.Add(new Sound("La La Land", SoundCategory.HipHop, "Album Name"));
 
-            //sounds.Add(new Sound("Ship", SoundCategory.Warnings));
-            //sounds.Add(new Sound("Siren", SoundCategory.Warnings));
-            sounds.Add(new Sound("3", SoundCategory.Pop));
-            sounds.Add(new Sound("Catch My Breath", SoundCategory.Pop));
-            sounds.Add(new Sound("Constellation of Tatyana", SoundCategory.Electronic));
-            sounds.Add(new Sound("Sky High", SoundCategory.HipHop));
-            sounds.Add(new Sound("Für immer", SoundCategory.Instrumental));
-            sounds.Add(new Sound("Hey Mama", SoundCategory.HipHop));
-            sounds.Add(new Sound("I Hate Myself For Loving You", SoundCategory.Rock));
-            sounds.Add(new Sound("La La Land", SoundCategory.HipHop));
-            sounds.Add(new Sound("Memories Of You", SoundCategory.Electronic));
-            sounds.Add(new Sound("Second Waltz", SoundCategory.Instrumental));
-            sounds.Add(new Sound("The Tide Is High", SoundCategory.Pop));
-            sounds.Add(new Sound("Wrecking Ball", SoundCategory.Pop));
+            sounds.Add(new Sound("Second Waltz", SoundCategory.Instrumental, "Album Name"));
+
+            sounds.Add(new Sound("Last Of The Wilds", SoundCategory.Metal, "Album Name"));
+
+            sounds.Add(new Sound("3", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("Catch My Breath", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("The Tide is High", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("Wrecking Ball", SoundCategory.Pop, "Album Name"));
+
+            sounds.Add(new Sound("I Hate Myself For Loving You", SoundCategory.Rock, "Album Name"));
 
             return sounds;
         }

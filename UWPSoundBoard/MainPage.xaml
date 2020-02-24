@@ -99,7 +99,7 @@
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame x:Name="contentFrame" />
-                
+
                 <!--<Grid Margin="20,20,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -127,9 +127,8 @@
                     </ListView>
 
                 </Grid>-->
-                
-            </SplitView.Content>
 
+            </SplitView.Content>
         </SplitView>
     </Grid>
 </Page>

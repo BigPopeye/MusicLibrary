@@ -4,3 +4,133 @@ UWPSoundBoard/obj/*
 
 
 
+.vs/MusicLibrary/v16/Server/sqlite3/storage.ide
+.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-shm
+.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-wal
+Assets/Icons/add.png
+Assets/Icons/allsongs.png
+Assets/Icons/back.png
+Assets/Icons/category.png
+Assets/Icons/close.png
+Assets/Icons/code_add.png
+Assets/Icons/code_allsongs.png
+Assets/Icons/code_back.png
+Assets/Icons/code_close.png
+Assets/Icons/code_delete.png
+Assets/Icons/code_genre_category.png
+Assets/Icons/code_humbuger.png
+Assets/Icons/code_play.png
+Assets/Icons/code_playlist.png
+Assets/Icons/code_playlist_user.png
+Assets/Icons/delete.png
+Assets/Icons/humbuger.png
+Assets/Icons/play.png
+Assets/Icons/playlist_defualt.png
+Assets/Icons/playlist_user.png
+Assets/Images/DefaultListCover.jpg
+Assets/Images/DefualtGenreCover.jpg
+Assets/Images/DefualtSongCover.png
+Assets/Songs/3.mp3
+Assets/Songs/Catch My Breath.mp3
+Assets/Songs/Constellation Of Tatyana.mp3
+Assets/Songs/Eisblume - Für immer (Instrumental).mp3
+Assets/Songs/Hey Mama (The Blueprint).mp3
+Assets/Songs/I Hate Myself For Loving You.mp3
+Assets/Songs/Jax - La La Land.mp3
+Assets/Songs/Last Of The Wilds.mp3
+Assets/Songs/Memories Of You.mp3
+Assets/Songs/readme.png
+Assets/Songs/Second Waltz.mp3
+Assets/Songs/Sky High.mp3
+Assets/Songs/The Tide Is High.mp3
+Assets/Songs/Wrecking Ball.mp3
+Other/Icons/add.png
+Other/Icons/allsongs.png
+Other/Icons/back.png
+Other/Icons/category.png
+Other/Icons/close.png
+Other/Icons/code_add.png
+Other/Icons/code_allsongs.png
+Other/Icons/code_back.png
+Other/Icons/code_close.png
+Other/Icons/code_delete.png
+Other/Icons/code_genre_category.png
+Other/Icons/code_humbuger.png
+Other/Icons/code_play.png
+Other/Icons/code_playlist.png
+Other/Icons/code_playlist_user.png
+Other/Icons/delete.png
+Other/Icons/humbuger.png
+Other/Icons/play.png
+Other/Icons/playlist_defualt.png
+Other/Icons/playlist_user.png
+Other/Images/DefaultListCover.jpg
+Other/Images/DefualtGenreCover.jpg
+Other/Images/DefualtSongCover.png
+Other/Songs/3.mp3
+Other/Songs/Catch My Breath.mp3
+Other/Songs/Constellation Of Tatyana.mp3
+Other/Songs/Eisblume - Für immer (Instrumental).mp3
+Other/Songs/Hey Mama (The Blueprint).mp3
+Other/Songs/I Hate Myself For Loving You.mp3
+Other/Songs/Jax - La La Land.mp3
+Other/Songs/Last Of The Wilds.mp3
+Other/Songs/Memories Of You.mp3
+Other/Songs/readme.png
+Other/Songs/Second Waltz.mp3
+Other/Songs/Sky High.mp3
+Other/Songs/The Tide Is High.mp3
+Other/Songs/Wrecking Ball.mp3
+UWPSoundBoard/AllSongsPage.xaml
+UWPSoundBoard/Assets/Audio/Animals/Cat.wav
+UWPSoundBoard/Assets/Audio/Animals/Cow.wav
+UWPSoundBoard/Assets/Audio/Cartoons/Gun.wav
+UWPSoundBoard/Assets/Audio/Cartoons/Spring.wav
+UWPSoundBoard/Assets/Audio/Instrumental/Für immer.mp3
+UWPSoundBoard/Assets/Audio/Taunts/Clock.wav
+UWPSoundBoard/Assets/Audio/Taunts/LOL.wav
+UWPSoundBoard/Assets/Audio/Warnings/Ship.wav
+UWPSoundBoard/Assets/Audio/Warnings/Siren.wav
+UWPSoundBoard/Assets/Icons/animals.png
+UWPSoundBoard/Assets/Icons/cartoon.png
+UWPSoundBoard/Assets/Icons/electronic.jpg
+UWPSoundBoard/Assets/Icons/hip-hop.jpg
+UWPSoundBoard/Assets/Icons/instrumental.jpg
+UWPSoundBoard/Assets/Icons/metal.jpg
+UWPSoundBoard/Assets/Icons/pop.jpg
+UWPSoundBoard/Assets/Icons/rock.jpg
+UWPSoundBoard/Assets/Icons/taunt.png
+UWPSoundBoard/Assets/Icons/warning.png
+UWPSoundBoard/Assets/Images/Animals/Cat.png
+UWPSoundBoard/Assets/Images/Animals/Cow.png
+UWPSoundBoard/Assets/Images/Cartoons/Gun.png
+UWPSoundBoard/Assets/Images/Cartoons/Spring.png
+UWPSoundBoard/Assets/Images/Electronic/Constellation Of Tatyana.png
+UWPSoundBoard/Assets/Images/Electronic/Memories Of You.png
+UWPSoundBoard/Assets/Images/HipHop/Hey Mama.png
+UWPSoundBoard/Assets/Images/HipHop/La La Land.png
+UWPSoundBoard/Assets/Images/HipHop/Sky High.png
+UWPSoundBoard/Assets/Images/Instrumental/Second Waltz.png
+UWPSoundBoard/Assets/Images/Metal/Last Of The Wilds.png
+UWPSoundBoard/Assets/Images/Pop/3.png
+UWPSoundBoard/Assets/Images/Pop/Catch My Breath.png
+UWPSoundBoard/Assets/Images/Pop/The Tide Is High.png
+UWPSoundBoard/Assets/Images/Pop/Wrecking Ball.png
+UWPSoundBoard/Assets/Images/Rock/I Hate Myself For Loving You.png
+UWPSoundBoard/Assets/Images/Taunts/Clock.png
+UWPSoundBoard/Assets/Images/Taunts/LOL.png
+UWPSoundBoard/Assets/Images/Warnings/Ship.png
+UWPSoundBoard/Assets/Images/Warnings/Siren.png
+UWPSoundBoard/ContentDialog1.xaml
+UWPSoundBoard/ContentDialog1.xaml.cs
+UWPSoundBoard/DataSource.cs
+UWPSoundBoard/GenresPage.xaml
+UWPSoundBoard/GenresPage.xaml.cs
+UWPSoundBoard/MainPage.xaml
+UWPSoundBoard/MainPage.xaml.cs
+UWPSoundBoard/Model/Sound.cs
+UWPSoundBoard/Model/SoundManager.cs
+UWPSoundBoard/MusicLibrary.csproj
+UWPSoundBoard/PlayList.cs
+UWPSoundBoard/Song.cs
+UWPSoundBoard/UserPlaylist.cs

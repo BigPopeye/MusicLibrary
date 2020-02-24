@@ -31,23 +31,33 @@ namespace MusicLibrary
             //Load pane
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/animals.png",
-                Category = SoundCategory.Animals
+                IconFile = "Assets/Icons/electronic.jpg",
+                Category = SoundCategory.Electronic
             });
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/cartoon.png",
-                Category = SoundCategory.Cartoons
+                IconFile = "Assets/Icons/hip-hop.jpg",
+                Category = SoundCategory.HipHop
             });
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/taunt.png",
-                Category = SoundCategory.Taunts
+                IconFile = "Assets/Icons/instrumental.jpg",
+                Category = SoundCategory.Instrumental
             });
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/warning.png",
-                Category = SoundCategory.Warnings
+                IconFile = "Assets/Icons/metal.jpg",
+                Category = SoundCategory.Metal
+            });
+            menuItems.Add(new MenuItem
+            {
+                IconFile = "Assets/Icons/pop.jpg",
+                Category = SoundCategory.Pop
+            });
+            menuItems.Add(new MenuItem
+            {
+                IconFile = "Assets/Icons/rock.jpg",
+                Category = SoundCategory.Rock
             });
         }
 
