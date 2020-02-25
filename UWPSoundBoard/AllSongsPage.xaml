@@ -17,7 +17,7 @@
                     
                     <MediaElement Name="MyMediaElement" AutoPlay="True"/>
                     
-                    <TextBlock Name="CategoryTextBlock" Text="All Sounds" FontSize="24"/>
+                    <TextBlock Name="CategoryTextBlock" Text="All Songs" FontSize="28"/>
                     
                     <ListView Grid.Row="1"
                               Name="SoundGridView"
@@ -25,11 +25,40 @@
                               IsItemClickEnabled="True"
                               ItemsSource="{x:Bind sounds}"
                               ItemClick="SoundGridView_ItemClick"
+                              HorizontalAlignment="Left" 
+                              Width="994" 
+                              Margin="10,0,0,0"
                               >
                         <ListView.ItemTemplate>
                             <DataTemplate x:DataType="data:Sound">
                                 <StackPanel Orientation="Horizontal">
-                                    <Ellipse Width="40" Height="40">
+                        <Image Name="MyImage" 
+                               Margin="-10,0,0,0" 
+                               Height="100" 
+                               Width="80" 
+                               Source="{x:Bind ImageFile}"/>
+                                    
+                        <TextBlock Text="{x:Bind Name}" 
+                                   Margin="20,0,0,0" 
+                                   Width="200" 
+                                   VerticalAlignment="Center"></TextBlock>
+                                    
+                        <TextBlock Text="{x:Bind Album}" 
+                                   Margin="20,0,0,0" 
+                                   Width="200" 
+                                   VerticalAlignment="Center"></TextBlock>
+                                    
+                        <TextBlock Text="Artist" 
+                                   Margin="20,0,0,0" 
+                                   Width="200" 
+                                   VerticalAlignment="Center"></TextBlock>
+                                    
+                        <TextBlock Text="Genre" 
+                                   Margin="20,0,0,0" 
+                                   Width="200" 
+                                   VerticalAlignment="Center"></TextBlock>
+
+                        <!--<<Ellipse Width="40" Height="40">
                                         <Ellipse.Fill>
                                             <ImageBrush ImageSource="{x:Bind ImageFile}"/>
                                         </Ellipse.Fill>
@@ -45,11 +74,11 @@
                                                Width="100" 
                                                VerticalAlignment="Center"
                                                FontSize="15">
-                                    
                                     </TextBlock>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Grid>
+                                    >-->
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
 </Page>

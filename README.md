@@ -1,2 +1,2 @@
-# MusicLibray
+# MusicLibrary
 Create your own music collection
