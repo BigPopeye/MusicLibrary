@@ -29,16 +29,16 @@ namespace MusicLibrary
             this.InitializeComponent();
             menuItems = new List<MenuItem>();
             //Load pane
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/animals.png",
-                Category = SoundCategory.Animals
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/cartoon.png",
-                Category = SoundCategory.Cartoons
-            });
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/animals.png",
+            //    Category = SoundCategory.Animals
+            //});
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/cartoon.png",
+            //    Category = SoundCategory.Cartoons
+            //});
             menuItems.Add(new MenuItem
             {
                 IconFile = "Assets/Icons/taunt.png",
