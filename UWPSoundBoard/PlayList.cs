@@ -12,10 +12,10 @@ namespace MusicLibrary
     class PlayList
     {
         //define properties of playlist
-        string Name;
+        public string Name { get; set; }
         List<Song> SongList;
         string CoverImagePath;
-        private PlayList name;
+        //private PlayList name;
 
 
         public PlayList(string name)
@@ -30,20 +30,14 @@ namespace MusicLibrary
             SongList = new List<Song>();
             CoverImagePath = coverimagepath;
         }
-
-        public PlayList(PlayList name)
-        {
-            this.name = name;
-        }
-
-
+        
         //define functions
         //add song to playlist
         public void AddSong(Song newsong)
         {
             SongList.Add(newsong);
         }
-
+        //delete song in playlist
         public void DeleteSong(Song songobject)
         {
             SongList.Remove(songobject);
@@ -62,5 +56,12 @@ namespace MusicLibrary
             }
 
         }
+
+
+
+
+
+
+
     }
 }

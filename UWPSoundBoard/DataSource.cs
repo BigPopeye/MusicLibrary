@@ -1,7 +1,4 @@
-﻿
-//Prachi to Review
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -22,12 +19,12 @@ namespace MusicLibrary
             allSongs = new ObservableCollection<Song>();
             allPlayLists = new ObservableCollection<PlayList>();
         }
-
+        //to return all songs from playlist
         public ObservableCollection<Song> getAllSongs()
         {
             return allSongs;
         }
-
+        // to return all created playlists
         public ObservableCollection<PlayList> getAllPlayLists()
         {
             return allPlayLists;
@@ -37,12 +34,12 @@ namespace MusicLibrary
         {
             allSongs.Add(newsong);
         }
-
+        //to add new playlists
         public void AddPlayList(PlayList newPlayList)
         {
             allPlayLists.Add(newPlayList);
         }
-
+        //to delete playlist
         public void DeletePlayList(PlayList playlistobject)
         {
             allPlayLists.Remove(playlistobject);
