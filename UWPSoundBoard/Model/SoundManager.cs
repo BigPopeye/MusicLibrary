@@ -26,6 +26,25 @@ namespace MusicLibrary.Model
             sounds.Add(new Sound("The Tide Is High", "Atomic Kitten", "Video Hits", SoundCategory.Pop));
             sounds.Add(new Sound("Wrecking Ball", "Miley Cyrus", "Smash 2014 Vol.1", SoundCategory.Pop));
 
+
+            sounds.Add(new Sound("Constellation Of Tatyana", SoundCategory.Electronic, "Stars Of The Pacific Ocean"));
+            sounds.Add(new Sound("Memories Of You", SoundCategory.Electronic, "Album Name"));
+
+            sounds.Add(new Sound("Hey Mama", SoundCategory.HipHop, "Album Name"));
+            sounds.Add(new Sound("Sky High", SoundCategory.HipHop, "Album Name"));
+            sounds.Add(new Sound("La La Land", SoundCategory.HipHop, "Album Name"));
+
+            sounds.Add(new Sound("Second Waltz", SoundCategory.Instrumental, "Album Name"));
+
+            sounds.Add(new Sound("Last Of The Wilds", SoundCategory.Metal, "Album Name"));
+
+            sounds.Add(new Sound("3", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("Catch My Breath", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("The Tide is High", SoundCategory.Pop, "Album Name"));
+            sounds.Add(new Sound("Wrecking Ball", SoundCategory.Pop, "Album Name"));
+
+            sounds.Add(new Sound("I Hate Myself For Loving You", SoundCategory.Rock, "Album Name"));
+
             return sounds;
         }
         public static void GetAllSounds(ObservableCollection<Sound> sounds)
