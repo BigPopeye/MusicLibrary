@@ -4,3 +4,5 @@ UWPSoundBoard/obj/*
 
 
 
+.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-shm
+.vs/MusicLibrary/v16/Server/sqlite3/storage.ide-wal
