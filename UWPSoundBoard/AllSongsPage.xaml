@@ -9,7 +9,6 @@
     xmlns:data ="using:MusicLibrary.Model"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-
     <Grid Margin="20,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" 
@@ -59,57 +58,35 @@
                                                Margin="20,20,0,0"
                                                Width="200"
                                                Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
 
+                        <TextBlock Text="{x:Bind Artist}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    
-                    <MediaElement Name="MyMediaElement" AutoPlay="True"/>
-                    
-                    <TextBlock Name="CategoryTextBlock" Text="All Songs" FontSize="28"/>
-                    
-                    <ListView Grid.Row="1"
-                              Name="SoundGridView"
-                              SelectionMode="None"
-                              IsItemClickEnabled="True"
-                              ItemsSource="{x:Bind sounds}"
-                              ItemClick="SoundGridView_ItemClick"
-                              HorizontalAlignment="Left" 
-                              Width="994" 
-                              Margin="10,0,0,0"
-                              >
-                        <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="data:Sound">
-                                <StackPanel Orientation="Horizontal">
-                        <Image Name="MyImage" 
-                               Margin="-10,0,0,0" 
-                               Height="100" 
-                               Width="80" 
-                               Source="{x:Bind ImageFile}"/>
-                                    
-                        <TextBlock Text="{x:Bind Name}" 
-                                   Margin="20,0,0,0" 
-                                   Width="200" 
-                                   VerticalAlignment="Center"></TextBlock>
-                                    
                         <TextBlock Text="{x:Bind Album}" 
-                                   Margin="20,0,0,0" 
-                                   Width="200" 
-                                   VerticalAlignment="Center"></TextBlock>
-                                    
-                        <TextBlock Text="Artist" 
-                                   Margin="20,0,0,0" 
-                                   Width="200" 
-                                   VerticalAlignment="Center"></TextBlock>
-                                    
-                        <TextBlock Text="Genre" 
-                                   Margin="20,0,0,0" 
-                                   Width="200" 
-                                   VerticalAlignment="Center"></TextBlock>
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
 
-                        
+                        <TextBlock Text="{x:Bind Category}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center"
+                                               FontSize="12 ">
+
+                        </TextBlock>
+
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

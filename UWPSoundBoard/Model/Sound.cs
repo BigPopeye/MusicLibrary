@@ -16,7 +16,6 @@ namespace MusicLibrary.Model
         Rock,
         Taunts,
         Warnings
-
     }
     public class Sound
     {
@@ -27,11 +26,10 @@ namespace MusicLibrary.Model
         public string AudioFile { get; set; }
         public string ImageFile { get; set; }
 
-        public Sound(string name, SoundCategory category, string album)
+        public Sound(string name, SoundCategory category)
         {
             Name = name;
             Category = category;
-            Album = album;
             AudioFile = $"/Assets/Audio/{category}/{name}.mp3";
             ImageFile = $"/Assets/Images/{category}/{name}.png";
         }
