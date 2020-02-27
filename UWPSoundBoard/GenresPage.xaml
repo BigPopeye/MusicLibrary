@@ -21,7 +21,11 @@
                        Margin="16,16,0,0"/>
         </StackPanel>
         <Grid Grid.Row="1">
-            <GridView ItemsSource="{x:Bind menuItems}">
+            <GridView Name="GenreGridView"
+                      SelectionMode="None"
+                      IsItemClickEnabled="True"
+                      ItemsSource="{x:Bind menuItems}"
+                      ItemClick="GenreGridView_ItemClick">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="data:MenuItem" >
                         <StackPanel >

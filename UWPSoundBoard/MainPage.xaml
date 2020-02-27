@@ -7,128 +7,39 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:data="using:MusicLibrary.Model"
+    xmlns:muxc="using:Windows.UI.Xaml.Controls"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <RelativePanel>
-            <Button Content="&#xE700;"
-                    Name="HamburgerButton"
-                    FontFamily="Segoe MDL2 Assets"
-                    Click="HamburgerButton_Click"
-                    RelativePanel.AlignLeftWithPanel="True"
-                    />
-            <Button Content="&#xE0A6;"
-                    Name="BackButton"
-                    FontFamily="Segoe MDL2 Assets"
-                    Click="BackButton_Click"
-                    RelativePanel.RightOf="HamburgerButton"
-                    />
-        </RelativePanel>
-        <SplitView Grid.Row="1" Name="MySplitView"
-                   DisplayMode="CompactInline"
-                   CompactPaneLength="50"
-                   OpenPaneLength="200">
-            <SplitView.Pane>
-                <!--<ListView Name="MenuItemsListView" IsItemClickEnabled="True"
-                          ItemsSource="{x:Bind menuItems}"
-                          ItemClick="MenuItemsListView_ItemClick">-->
-                <ListView x:Name="MenuItemsListView" 
-                          IsItemClickEnabled="True">
-                    <!--<ListView.ItemTemplate>
-                        <DataTemplate x:DataType="data:MenuItem" >
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="{x:Bind IconFile}"
-                                       Height="35"
-                                       Width="35"
-                                       Margin="-10,10,0,10"
-                                       />
-                                <TextBlock
-                                    Text="{x:Bind Category}"
-                                    FontSize="18"
-                                    Margin="10,0,0,0"
-                                    VerticalAlignment="Center" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>-->
-                    <StackPanel Orientation="Horizontal">
-                        <Button Content="&#xE90B;"
-                            Name="AllSongsMenu"
-                            FontFamily="Segoe MDL2 Assets"
-                            Click="AllSongsMenu_Click"/>
-                        <TextBlock Text="My Songs"
-                                   HorizontalAlignment="Center"
-                                   Margin="8"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button Content="&#xE8D6;"
-                            Name="GenresMenu"
-                            FontFamily="Segoe MDL2 Assets"
-                            Click="GenresMenu_Click"/>
-                        <TextBlock Text="Genres"
-                                   HorizontalAlignment="Center"
-                                   Margin="8"/>
-                    </StackPanel>
-                    <RelativePanel Width="180">
-                        <StackPanel Orientation="Horizontal">
-                            <Button Content="&#xEA55;"
-                            Name="PlaylistMenu"
-                            FontFamily="Segoe MDL2 Assets"
-                            Click="PlaylistMenu_Click"/>
-                            <TextBlock Text="Playlist"
-                                   HorizontalAlignment="Center"
-                                   Margin="8"/>
-                        </StackPanel>
-                        <Button Content="&#xE948;"
-                            Name="AddPlaylistButton"
-                            FontFamily="Segoe MDL2 Assets"
-                            Click="AddPlaylistButton_Click"
-                            HorizontalAlignment="Right"
-                            RelativePanel.AlignRightWithPanel="True"
-                            RelativePanel.AlignVerticalCenterWithPanel="True"/>
-                    </RelativePanel>
-                    <Button Content="&#xE948;"
-                            Name="SingleAddPlaylistButton"
-                            FontFamily="Segoe MDL2 Assets"
-                            Click="SingleAddPlaylistButton_Click"
-                            Visibility="Visible"/>
-                </ListView>
-            </SplitView.Pane>
-            <SplitView.Content>
-                <Frame x:Name="contentFrame" />
+    <Grid HorizontalAlignment="Stretch">
+        <muxc:NavigationView x:Name="Navigator"
+                             ItemInvoked="Navigator_ItemInvoked"
+                             OpenPaneLength="280"
+                             BackRequested="Navigator_BackRequested"
+                             IsSettingsVisible="False">
+            <muxc:NavigationView.MenuItems>
+                <muxc:NavigationViewItem Icon="MusicInfo" Content="My Songs" Tag="AllSongsMenu" />
+                <muxc:NavigationViewItem Icon="Emoji2" Content="Gernes" Tag="GernesMenu" />
+                <NavigationViewItemSeparator/>
+                <muxc:NavigationViewItem Grid.Column="0" Icon="Play" Content="Playlist" Tag="PlaylistMenu"/>
 
-                <!--<Grid Margin="20,20,0,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    
-                    <MediaElement Name="MyMediaElement" AutoPlay="True"/>
-                    
-                    <TextBlock Name="CategoryTextBlock" Text="All Sounds" FontSize="24"/>
-                    
-                    <ListView Grid.Row="1"
-                              Name="SoundGridView"
-                              SelectionMode="None"
-                              IsItemClickEnabled="True"
-                              ItemsSource="{x:Bind sounds}"
-                              ItemClick="SoundGridView_ItemClick">
-                        <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="data:Sound">
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Name="MyImage" Height="80" Width="60" Source="{x:Bind ImageFile}"/>
-                                    <TextBlock Text="hello" Width="100" VerticalAlignment="Center">hehe</TextBlock>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                <Grid Margin="-16,0,0,0" Width="280">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="44"/>
+                    </Grid.ColumnDefinitions>
 
-                </Grid>-->
+                    <Button x:Name="AddPlaylistButton" Grid.Column="0" HorizontalAlignment="Right"/>
+                </Grid>
 
-            </SplitView.Content>
-        </SplitView>
+            </muxc:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+
+        </muxc:NavigationView>
     </Grid>
 </Page>

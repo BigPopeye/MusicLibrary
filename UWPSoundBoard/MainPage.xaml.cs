@@ -37,79 +37,108 @@ namespace MusicLibrary
         public MainPage()
         {
             this.InitializeComponent();
-            //sounds = new ObservableCollection<Sound>();
-            //SoundManager.GetAllSounds(sounds);
-
-            //menuItems = new List<MenuItem>();
-            ////Load pane
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/animals.png",
-            //    Category = SoundCategory.Animals
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/cartoon.png",
-            //    Category = SoundCategory.Cartoons
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/taunt.png",
-            //    Category = SoundCategory.Taunts
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/warning.png",
-            //    Category = SoundCategory.Warnings
-            //});
 
         }
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+
+        private void Navigator_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            if (!MySplitView.IsPaneOpen)
+            Navigator.IsBackEnabled = contentFrame.CanGoBack;
+            var item = sender.MenuItems.OfType<NavigationViewItem>()
+                .First(x => (string)x.Content == (string)args.InvokedItem);
+            NaviView_Navigate(item as NavigationViewItem);
+            
+        }
+        private void NaviView_Navigate(NavigationViewItem item)
+        {
+            switch (item.Tag)
             {
-                SingleAddPlaylistButton.Visibility = Visibility.Visible;
+                case "AllSongsMenu":
+                    contentFrame.Navigate(typeof(AllSongsPage),Navigator);
+                    break;
+                case "GernesMenu":
+                    contentFrame.Navigate(typeof(GenresPage),Navigator);
+                    break;
+                case "PlaylistMenu":
+                    contentFrame.Navigate(typeof(PlaylistPage));
+                    break;
             }
-            else
-            {
-                SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
-            }
-
         }
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+
+        // Deal with Back Button logic
+        private void Navigator_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
         {
-            //SoundManager.GetAllSounds(sounds);
-            ////CategoryTextBlock.Text = "All Sounds";
-            //MenuItemsListView.SelectedItem = null;
-            //BackButton.Visibility = Visibility.Collapsed;
+            On_BackRequested();
         }
-
-        private void AllSongsMenu_Click(object sender, RoutedEventArgs e)
+        private bool On_BackRequested()
         {
-            //this.Frame.Navigate(typeof(GenresPage));
-            contentFrame.Navigate(typeof(AllSongsPage));
-        }
-        private void GenresMenu_Click(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(GenresPage));
-            contentFrame.Navigate(typeof(GenresPage), new Params() { MyProperty = 42 });
-        }
+            if (!contentFrame.CanGoBack)
+                return false;
 
-        private void PlaylistMenu_Click(object sender, RoutedEventArgs e)
-        {
+            if(Navigator.IsPaneOpen &&
+                (Navigator.DisplayMode == NavigationViewDisplayMode.Compact ||
+                Navigator.DisplayMode == NavigationViewDisplayMode.Minimal))
+                return false;
+            
 
-        }
-
-        private void SingleAddPlaylistButton_Click(object sender, RoutedEventArgs e)
-        {
-
+            contentFrame.GoBack();
+            return true;
         }
 
-        private void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
-        {
+        //private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        //    if (!MySplitView.IsPaneOpen)
+        //    {
+        //        SingleAddPlaylistButton.Visibility = Visibility.Visible;
+        //    }
+        //    else
+        //    {
+        //        SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
+        //    }
 
-        }
+        //}
+        //private void BackButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //SoundManager.GetAllSounds(sounds);
+        //    ////CategoryTextBlock.Text = "All Sounds";
+        //    //MenuItemsListView.SelectedItem = null;
+        //    //BackButton.Visibility = Visibility.Collapsed;
+        //    On_BackRequested();
+        //}
+        //private bool On_BackRequested()
+        //{
+        //    if (contentFrame.CanGoBack)
+        //    {
+        //        contentFrame.GoBack();
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+        //private void AllSongsMenu_Click(object sender, RoutedEventArgs e)
+        //{
+        //    contentFrame.Navigate(typeof(AllSongsPage));
+        //}
+        //private void GenresMenu_Click(object sender, RoutedEventArgs e)
+        //{
+        //    contentFrame.Navigate(typeof(GenresPage), BackButton);
+        //}
+
+        //private void PlaylistMenu_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void SingleAddPlaylistButton_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
 
         //private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
         //{
@@ -127,10 +156,7 @@ namespace MusicLibrary
 
 
     }
-    public class Params
-    {
-        public int MyProperty { get; set; }
-    }
+    
 }
 
 
