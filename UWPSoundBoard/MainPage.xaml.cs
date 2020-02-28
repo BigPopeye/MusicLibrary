@@ -136,6 +136,13 @@ namespace MusicLibrary
                 currentDataSource.AddPlayList(UP);
             }
         }
+        private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string item = Delete1.SelectedValue.ToString();
+                  
+            currentDataSource.DeletePlayList(item);
+        }
 
 
 

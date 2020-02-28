@@ -96,6 +96,7 @@
                             Click="SingleAddPlaylistButton_Click"
                             Visibility="Visible"/>
                 </ListView>
+                
             </SplitView.Pane>
             <SplitView.Content>
                 <Frame x:Name="contentFrame" />
@@ -130,5 +131,26 @@
 
             </SplitView.Content>
         </SplitView>
+        <StackPanel Margin="0,200,600,0" Grid.Row="2">
+            <ComboBox  x:Name="Delete1" Header="UserPlayLists" 
+                             ItemsSource="{x:Bind Path=currentDataSource.getAllPlayLists()}" Height="62" Width="115"
+                             SelectedItem= "{Binding SelectedItem.Content}" SelectedValuePath="Name">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="local:PlayList">
+                        <TextBlock x:Name="textbox5" Text="{x:Bind Path=Name}" Margin="10,10,0,0"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+
+            </ComboBox>
+            <Button Content="Delete"
+                            Name="DeleteButton"
+                            FontFamily="Arial"
+                            Click="DeletePlaylistButton_Click"
+                            HorizontalAlignment="Right"
+                            Visibility="Visible" Width="80"/>
+        </StackPanel>
+
+
+
     </Grid>
 </Page>

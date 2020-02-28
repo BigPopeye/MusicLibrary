@@ -19,12 +19,12 @@ namespace MusicLibrary
             allSongs = new ObservableCollection<Song>();
             allPlayLists = new ObservableCollection<PlayList>();
         }
-        //to return all songs from playlist
+
         public ObservableCollection<Song> getAllSongs()
         {
             return allSongs;
         }
-        // to return all created playlists
+
         public ObservableCollection<PlayList> getAllPlayLists()
         {
             return allPlayLists;
@@ -34,20 +34,27 @@ namespace MusicLibrary
         {
             allSongs.Add(newsong);
         }
-        //to add new playlists
+
         public void AddPlayList(PlayList newPlayList)
         {
             allPlayLists.Add(newPlayList);
         }
-        //to delete playlist
-        public void DeletePlayList(PlayList playlistobject)
-        {
-            allPlayLists.Remove(playlistobject);
-        }
 
-        public ObservableCollection<PlayList> GetPlayLists()
+        public void DeletePlayList(string nameToDelete)
         {
-            return allPlayLists;
+            //allPlayLists.Remove(playlistobject);
+            PlayList objectToDelete = null;
+            foreach (PlayList p in allPlayLists)
+            {
+                if (string.Equals(p.getName(), nameToDelete))
+                {
+                    objectToDelete = p;
+                    break;
+                }
+            }
+
+            allPlayLists.Remove(objectToDelete);
+            return;
         }
 
         public Guid GetSongID(string name)

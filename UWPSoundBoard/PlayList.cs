@@ -1,7 +1,4 @@
-﻿
-//For Prachi to Review
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +9,9 @@ namespace MusicLibrary
     class PlayList
     {
         //define properties of playlist
-        public string Name { get; set; }
         List<Song> SongList;
         string CoverImagePath;
-        //private PlayList name;
+        public string Name { get; set; }
 
 
         public PlayList(string name)
@@ -30,14 +26,19 @@ namespace MusicLibrary
             SongList = new List<Song>();
             CoverImagePath = coverimagepath;
         }
-        
+
+        public string getName()
+        {
+            return Name;
+        }
+
         //define functions
         //add song to playlist
         public void AddSong(Song newsong)
         {
             SongList.Add(newsong);
         }
-        //delete song in playlist
+
         public void DeleteSong(Song songobject)
         {
             SongList.Remove(songobject);
@@ -56,12 +57,5 @@ namespace MusicLibrary
             }
 
         }
-
-
-
-
-
-
-
     }
 }
