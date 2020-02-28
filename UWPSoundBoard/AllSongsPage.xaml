@@ -12,7 +12,8 @@
     <Grid Margin="20,0,0,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" 
-                           MinHeight="110"/>
+                           MinHeight="110
+                           "/>
             <RowDefinition/>
         
         </Grid.RowDefinitions>
