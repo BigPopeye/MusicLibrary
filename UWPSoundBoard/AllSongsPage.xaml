@@ -9,15 +9,34 @@
     xmlns:data ="using:MusicLibrary.Model"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Margin="20,20,0,0">
+    <Grid Margin="20,0,0,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" 
+                           MinHeight="110
+                           "/>
+            <RowDefinition/>
+        
         </Grid.RowDefinitions>
 
         <MediaElement Name="MyMediaElement" AutoPlay="True"/>
+        <TextBlock Name="CategoryTextBlock" 
+                   Text="All Songs" 
+                   FontSize="40" 
+                   FontWeight="Thin"                             
+                   Margin="10,0,0,0" 
+                   VerticalAlignment="Top" 
+                   Height="60"/>
+                   
+        <ListView Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="CategoryTextBlock2" Text="Song" FontSize="15" Margin="70,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock3" Text="Artist" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock4" Text="Album" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock5" Text="Genre" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+            </StackPanel>
 
-        <TextBlock Name="CategoryTextBlock" Text="All Songs" FontSize="28"/>
+
+        </ListView>
 
         <ListView Grid.Row="1"
                         Name="SoundGridView"
@@ -41,68 +60,53 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <SwipeControl>
-                                <StackPanel Orientation="Horizontal"  Height="100" >
-                                    <Image Name="MyImage" 
-                                        Height="100" 
-                                        Width="80" 
-                                        Source="{x:Bind ImageFile}"/>
+                                 <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="35" Height="35" Margin="20,20,0,0">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="{x:Bind ImageFile}"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
 
-                                    <TextBlock Text="{x:Bind Name}" 
-                                                Margin="20,0,0,0" 
-                                                MinWidth="200"
-                                                VerticalAlignment="Center"></TextBlock>
-                                    <TextBlock Text="{x:Bind Album}" 
-                                                Margin="20,0,0,0" 
-                                               MinWidth="200"
-                                                VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{x:Bind Name}" 
+                                               Margin="20,20,0,0"
+                                               Width="200"
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
 
-                                    <TextBlock Text="Artist" 
-                                                Margin="20,0,0,0" 
-                                               MinWidth="150"
-                                                VerticalAlignment="Center"></TextBlock>
+                        <TextBlock Text="{x:Bind Artist}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
 
-                                    <TextBlock Text="Genre" 
-                                                Margin="20,0,0,0" 
-                                               MinWidth="150"
-                                                VerticalAlignment="Center"></TextBlock>
-                                    <Button Content="Add To Playlist" x:Name="HoverButton" 
-                                                  IsTabStop="False" HorizontalAlignment="Right" 
-                                                  Visibility="Collapsed" Command="{x:Bind Command}">
-                                        <Button.Flyout>
-                                            <MenuFlyout>
-                                                <MenuFlyoutItem Text="Create New Playlist"/>
-                                                <MenuFlyoutSubItem Text="Add to Playlist">
-                                                    <MenuFlyoutItem Text="AAA"/>
-                                                </MenuFlyoutSubItem>
-                                            </MenuFlyout>
-                                        </Button.Flyout>
-                                    </Button>
-                                </StackPanel>
+                        <TextBlock Text="{x:Bind Album}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
+
+                        <TextBlock Text="{x:Bind Category}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center"
+                                               FontSize="12 ">
+
+                        </TextBlock>
+
+                    </StackPanel>
                             </SwipeControl>
                             
                         </Grid>
                     </UserControl>
-   
 
-    <!--<<Ellipse Width="40" Height="40">
-                                        <Ellipse.Fill>
-                                            <ImageBrush ImageSource="{x:Bind ImageFile}"/>
-                                        </Ellipse.Fill>
-                                     </Ellipse>
-
-                                    <TextBlock Text="{x:Bind Name}" 
-                                               Width="250" 
-                                               VerticalAlignment="Center" 
-                                               FontSize="15">
-                                    </TextBlock>
-
-                                    <TextBlock Text="{x:Bind Category}" 
-                                               Width="100" 
-                                               VerticalAlignment="Center"
-                                               FontSize="15">
-                                    </TextBlock>
-                                    >-->
-                    
+                   
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

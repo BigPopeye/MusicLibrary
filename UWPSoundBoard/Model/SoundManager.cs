@@ -12,24 +12,19 @@ namespace MusicLibrary.Model
         private static List<Sound> getSounds()
         {
             var sounds = new List<Sound>();
-
-            sounds.Add(new Sound("Constellation Of Tatyana", SoundCategory.Electronic, "Stars Of The Pacific Ocean"));
-            sounds.Add(new Sound("Memories Of You", SoundCategory.Electronic, "Album Name"));
-
-            sounds.Add(new Sound("Hey Mama", SoundCategory.HipHop, "Album Name"));
-            sounds.Add(new Sound("Sky High", SoundCategory.HipHop, "Album Name"));
-            sounds.Add(new Sound("La La Land", SoundCategory.HipHop, "Album Name"));
-
-            sounds.Add(new Sound("Second Waltz", SoundCategory.Instrumental, "Album Name"));
-
-            sounds.Add(new Sound("Last Of The Wilds", SoundCategory.Metal, "Album Name"));
-
-            sounds.Add(new Sound("3", SoundCategory.Pop, "Album Name"));
-            sounds.Add(new Sound("Catch My Breath", SoundCategory.Pop, "Album Name"));
-            sounds.Add(new Sound("The Tide is High", SoundCategory.Pop, "Album Name"));
-            sounds.Add(new Sound("Wrecking Ball", SoundCategory.Pop, "Album Name"));
-
-            sounds.Add(new Sound("I Hate Myself For Loving You", SoundCategory.Rock, "Album Name"));
+          
+            sounds.Add(new Sound("3", "Britney Spears", "3", SoundCategory.Pop));
+            sounds.Add(new Sound("Catch My Breath", "Kelly Clarkson", "Remixes", SoundCategory.Pop));
+            sounds.Add(new Sound("Constellation of Tatyana", "Yakuro", "Stars Of The Pacific Ocean", SoundCategory.Electronic));
+            sounds.Add(new Sound("Sky High", "Thomas Prime", "Fallen Skyes", SoundCategory.HipHop));
+            sounds.Add(new Sound("Für immer", "Eisblume", "Für immer", SoundCategory.Instrumental));
+            sounds.Add(new Sound("Hey Mama", "Alexander The Phatos", "Phatosism: A21st Century Cavatina", SoundCategory.HipHop));
+            sounds.Add(new Sound("I Hate Myself For Loving You", "Joan Jett & The Blackhearts", "Greatest Hits", SoundCategory.Rock));
+            sounds.Add(new Sound("La La Land", "Jax", "La La Land", SoundCategory.HipHop));
+            sounds.Add(new Sound("Memories Of You", "Approaching Nirvana", "ANimals", SoundCategory.Electronic));
+            sounds.Add(new Sound("Second Waltz", "James Last", "Classics From Russia", SoundCategory.Instrumental));
+            sounds.Add(new Sound("The Tide Is High", "Atomic Kitten", "Video Hits", SoundCategory.Pop));
+            sounds.Add(new Sound("Wrecking Ball", "Miley Cyrus", "Smash 2014 Vol.1", SoundCategory.Pop));
 
             return sounds;
         }

@@ -122,9 +122,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContentDialog1.xaml.cs">
-      <DependentUpon>ContentDialog1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="DataSource.cs" />
     <Compile Include="GenresPage.xaml.cs">
       <DependentUpon>GenresPage.xaml</DependentUpon>
@@ -152,33 +149,33 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Audio\Electronic\Constellation Of Tatyana.mp3" />
-    <Content Include="Assets\Audio\Electronic\Memories Of You.mp3" />
-    <Content Include="Assets\Audio\HipHop\Hey Mama.mp3" />
-    <Content Include="Assets\Audio\HipHop\La La Land.mp3" />
-    <Content Include="Assets\Audio\HipHop\Sky High.mp3" />
-    <Content Include="Assets\Audio\Instrumental\Second Waltz.mp3" />
-    <Content Include="Assets\Audio\Metal\Last Of The Wilds.mp3" />
     <Content Include="Assets\Audio\Pop\3.mp3" />
     <Content Include="Assets\Audio\Pop\Catch My Breath.mp3" />
+    <Content Include="Assets\Audio\Electronic\Constellation Of Tatyana.mp3" />
+    <Content Include="Assets\Audio\Instrumental\Für immer.mp3" />
+    <Content Include="Assets\Audio\HipHop\Hey Mama.mp3" />
+    <Content Include="Assets\Audio\Rock\I Hate Myself For Loving You.mp3" />
+    <Content Include="Assets\Audio\HipHop\La La Land.mp3" />
+    <Content Include="Assets\Audio\Metal\Last Of The Wilds.mp3" />
+    <Content Include="Assets\Audio\Electronic\Memories Of You.mp3" />
+    <Content Include="Assets\Audio\Instrumental\Second Waltz.mp3" />
+    <Content Include="Assets\Audio\HipHop\Sky High.mp3" />
     <Content Include="Assets\Audio\Pop\The Tide Is High.mp3" />
     <Content Include="Assets\Audio\Pop\Wrecking Ball.mp3" />
-    <Content Include="Assets\Audio\Rock\I Hate Myself For Loving You.mp3" />
-    <Content Include="Assets\Icons\electronic.jpg" />
-    <Content Include="Assets\Icons\hip-hop.jpg" />
-    <Content Include="Assets\Icons\instrumental.jpg" />
-    <Content Include="Assets\Icons\metal.jpg" />
-    <Content Include="Assets\Icons\pop.jpg" />
-    <Content Include="Assets\Icons\rock.jpg" />
-    <Content Include="Assets\Images\Electronic\Constellation of Tatyana.png" />
+    <Content Include="Assets\Icons\animals.png" />
+    <Content Include="Assets\Icons\cartoon.png" />
+    <Content Include="Assets\Icons\taunt.png" />
+    <Content Include="Assets\Icons\warning.png" />
     <Content Include="Assets\Images\Electronic\Memories Of You.png" />
     <Content Include="Assets\Images\HipHop\Hey Mama.png" />
     <Content Include="Assets\Images\HipHop\La La Land.png" />
     <Content Include="Assets\Images\HipHop\Sky High.png" />
+    <Content Include="Assets\Images\Instrumental\Für immer.png" />
     <Content Include="Assets\Images\Instrumental\Second Waltz.png" />
     <Content Include="Assets\Images\Metal\Last Of The Wilds.png" />
     <Content Include="Assets\Images\Pop\3.png" />
     <Content Include="Assets\Images\Pop\Catch My Breath.png" />
+    <Content Include="Assets\Images\Electronic\Constellation Of Tatyana.png" />
     <Content Include="Assets\Images\Pop\The Tide Is High.png" />
     <Content Include="Assets\Images\Pop\Wrecking Ball.png" />
     <Content Include="Assets\Images\Rock\I Hate Myself For Loving You.png" />
@@ -210,10 +207,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="AllSongsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ContentDialog1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

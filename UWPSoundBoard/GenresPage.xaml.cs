@@ -29,35 +29,25 @@ namespace MusicLibrary
             this.InitializeComponent();
             menuItems = new List<MenuItem>();
             //Load pane
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/animals.png",
+            //    Category = SoundCategory.Animals
+            //});
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/cartoon.png",
+            //    Category = SoundCategory.Cartoons
+            //});
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/electronic.jpg",
-                Category = SoundCategory.Electronic
+                IconFile = "Assets/Icons/taunt.png",
+                Category = SoundCategory.Taunts
             });
             menuItems.Add(new MenuItem
             {
-                IconFile = "Assets/Icons/hip-hop.jpg",
-                Category = SoundCategory.HipHop
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/instrumental.jpg",
-                Category = SoundCategory.Instrumental
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/metal.jpg",
-                Category = SoundCategory.Metal
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/pop.jpg",
-                Category = SoundCategory.Pop
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/rock.jpg",
-                Category = SoundCategory.Rock
+                IconFile = "Assets/Icons/warning.png",
+                Category = SoundCategory.Warnings
             });
         }
         public NavigationView backButton;
