@@ -28,7 +28,7 @@
                         <ColumnDefinition Width="44"/>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="AddPlaylistButton" Grid.Column="0" HorizontalAlignment="Right"/>
+                    <Button Content="&#xE948;" x:Name="AddPlaylistButton" Click="AddPlaylistButton_Click" Grid.Column="0" HorizontalAlignment="Right"/>
                 </Grid>
                 <StackPanel Margin="0,200,600,0" Grid.Row="2">
                     <ComboBox  x:Name="Delete1" Header="UserPlayLists" 

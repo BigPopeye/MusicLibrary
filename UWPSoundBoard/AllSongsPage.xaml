@@ -104,9 +104,11 @@
                                         Visibility="Collapsed" Command="{x:Bind Command}">
                             <Button.Flyout>
                                 <MenuFlyout>
-                                    <MenuFlyoutItem Text="Create New Playlist"/>
+                                    <MenuFlyoutItem x:Name="MenuAddPlaylist" Text="Create New Playlist" Click="MenuAddPlaylist_Click"/>
                                     <MenuFlyoutSubItem Text="Add to Playlist">
-                                        <MenuFlyoutItem Text="AAA"/>
+                                                    <MenuFlyoutItem>
+                                                       
+                                                    </MenuFlyoutItem>
                                     </MenuFlyoutSubItem>
                                 </MenuFlyout>
                             </Button.Flyout>

@@ -28,12 +28,15 @@ namespace MusicLibrary
     public sealed partial class AllSongsPage : Page
     {
         private ObservableCollection<Sound> sounds;
+        DataSource currentDataSource;
+        string p;
 
         public AllSongsPage()
         {
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
             SoundManager.GetAllSounds(sounds);
+            currentDataSource = new DataSource();
 
         }
         private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -60,6 +63,36 @@ namespace MusicLibrary
             backButton.IsBackEnabled = false;
 
             base.OnNavigatedTo(e);
+        }
+
+        private async void MenuAddPlaylist_Click(object sender, RoutedEventArgs e)
+        {
+            ContentDialog1 ct = new ContentDialog1();
+            var result = await ct.ShowAsync();
+
+            //if create button on dialog box is created then textbox content will go in text
+            if (result == ContentDialogResult.Primary)
+            {
+                var text = ct.Text;
+                // ListBox1.DataContext = text;
+                // ListBox1.Items.Add(text);
+            }
+            // if cancel button is clicked then textbox text will become null and dialog box window will be hidden
+            else
+            {
+                ct.Text = " ";
+                ct.Hide();
+            }
+            p = ct.Text;
+
+            // to add playlist with the name typed in textbox in list of playlists
+            if (p != " ")
+            {
+                PlayList UP = new PlayList(p);
+                currentDataSource.AddPlayList(UP);
+
+
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ namespace MusicLibrary
         public MainPage()
         {
             this.InitializeComponent();
-
+            currentDataSource = new DataSource();
         }
 
         private void Navigator_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
