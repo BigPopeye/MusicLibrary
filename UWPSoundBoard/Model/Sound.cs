@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace MusicLibrary.Model
 {
@@ -25,6 +26,8 @@ namespace MusicLibrary.Model
         public SoundCategory Category { get; set; }
         public string AudioFile { get; set; }
         public string ImageFile { get; set; }
+        public ICommand Command { get; set; }
+        
         Guid songID;
 
         public Sound(string name, SoundCategory category)

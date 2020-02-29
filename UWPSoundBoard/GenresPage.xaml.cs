@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation; 
+using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -50,13 +50,19 @@ namespace MusicLibrary
                 Category = SoundCategory.Warnings
             });
         }
+        public NavigationView backButton;
+        private void GenreGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //var item = (MenuItem)e.ClickedItem;
+            this.Frame.Navigate(typeof(SubSongsPage), backButton);
 
-
+        }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            Params result = (Params)e.Parameter;
+            backButton = (NavigationView)e.Parameter;
+            backButton.IsBackEnabled = false;
+            
             base.OnNavigatedTo(e);
         }
-
     }
 }
