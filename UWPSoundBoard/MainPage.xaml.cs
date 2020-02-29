@@ -26,6 +26,8 @@ namespace MusicLibrary
     {
         private ObservableCollection<Sound> sounds;
         private List<MenuItem> menuItems;
+        string p;
+        DataSource currentDataSource;
         public MainPage()
         {
             this.InitializeComponent();
