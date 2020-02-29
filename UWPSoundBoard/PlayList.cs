@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MusicLibrary.Model;
 
 namespace MusicLibrary
 {
     class PlayList
     {
         //define properties of playlist
-        List<Song> SongList;
+        List<Sound> SongList;
         string CoverImagePath;
         public string Name { get; set; }
 
@@ -17,13 +18,13 @@ namespace MusicLibrary
         public PlayList(string name)
         {
             Name = name;
-            SongList = new List<Song>();
+            SongList = new List<Sound>();
         }
 
         public PlayList(string name, string coverimagepath)
         {
             Name = name;
-            SongList = new List<Song>();
+            SongList = new List<Sound>();
             CoverImagePath = coverimagepath;
         }
 
@@ -34,12 +35,12 @@ namespace MusicLibrary
 
         //define functions
         //add song to playlist
-        public void AddSong(Song newsong)
+        public void AddSong(Sound newsong)
         {
             SongList.Add(newsong);
         }
-
-        public void DeleteSong(Song songobject)
+        //Delete song to playlist
+        public void DeleteSong(Sound songobject)
         {
             SongList.Remove(songobject);
         }
@@ -47,7 +48,7 @@ namespace MusicLibrary
 
         public void AddSongID(Guid songID, DataSource source)
         {
-            foreach (Song s in source.getAllSongs())
+            foreach (Sound s in source.getAllSongs())
             {
                 if (s.getSongID() == songID)
                 {

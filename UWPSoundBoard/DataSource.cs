@@ -5,22 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation.Collections;
+using MusicLibrary.Model;
 
 namespace MusicLibrary
 {
     class DataSource
     {
         //define collections
-        ObservableCollection<Song> allSongs;
+        ObservableCollection<Sound> allSongs;
         ObservableCollection<PlayList> allPlayLists;
 
         public DataSource()
         {
-            allSongs = new ObservableCollection<Song>();
+            allSongs = new ObservableCollection<Sound>();
             allPlayLists = new ObservableCollection<PlayList>();
         }
 
-        public ObservableCollection<Song> getAllSongs()
+        public ObservableCollection<Sound> getAllSongs()
         {
             return allSongs;
         }
@@ -30,7 +31,7 @@ namespace MusicLibrary
             return allPlayLists;
         }
 
-        public void AddSong(Song newsong)
+        public void AddSong(Sound newsong)
         {
             allSongs.Add(newsong);
         }
@@ -59,10 +60,10 @@ namespace MusicLibrary
 
         public Guid GetSongID(string name)
         {
-            Song selectedSong = null;
-            foreach (Song s in allSongs)
+            Sound selectedSong = null;
+            foreach (Sound s in allSongs)
             {
-                if (string.Equals(s.getName(), name))
+                if (string.Equals(s.Name, name))
                 {
                     selectedSong = s;
                 }
