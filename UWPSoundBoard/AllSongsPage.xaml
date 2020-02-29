@@ -99,8 +99,20 @@
                                                FontSize="12 ">
 
                         </TextBlock>
+                        <Button Content="Add To Playlist" x:Name="HoverButton" 
+                                        IsTabStop="False" HorizontalAlignment="Right" 
+                                        Visibility="Collapsed" Command="{x:Bind Command}">
+                            <Button.Flyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Create New Playlist"/>
+                                    <MenuFlyoutSubItem Text="Add to Playlist">
+                                        <MenuFlyoutItem Text="AAA"/>
+                                    </MenuFlyoutSubItem>
+                                </MenuFlyout>
+                            </Button.Flyout>
+                        </Button>
 
-                    </StackPanel>
+                                </StackPanel>
                             </SwipeControl>
                             
                         </Grid>

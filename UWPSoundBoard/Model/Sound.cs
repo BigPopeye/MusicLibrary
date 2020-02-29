@@ -26,7 +26,6 @@ namespace MusicLibrary.Model
         public SoundCategory Category { get; set; }
         public string AudioFile { get; set; }
         public string ImageFile { get; set; }
-        public string Album { get; set; }
         public ICommand Command { get; set; }
         
         Guid songID;
