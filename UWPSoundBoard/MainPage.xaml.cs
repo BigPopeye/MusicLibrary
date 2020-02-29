@@ -14,6 +14,15 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Windows;
+using System.Globalization;
+using System.Drawing;
+using System.ComponentModel;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -31,6 +40,7 @@ namespace MusicLibrary
         public MainPage()
         {
             this.InitializeComponent();
+           DataSource currentDataSource = new DataSource();
             //sounds = new ObservableCollection<Sound>();
             //SoundManager.GetAllSounds(sounds);
 
@@ -104,7 +114,7 @@ namespace MusicLibrary
 
         }
 
-       
+
         private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -122,7 +132,7 @@ namespace MusicLibrary
             else
             {
                 ct.Text = " ";
-                ct.Hide();
+                //ct.Hide();
             }
             p = ct.Text;
 
@@ -135,12 +145,13 @@ namespace MusicLibrary
 
             }
         }
+
         private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
         {
             
-            string item = Delete1.SelectedValue.ToString();
+          //  string item = Delete1.SelectedValue.ToString();
                   
-            currentDataSource.DeletePlayList(item);
+           // currentDataSource.DeletePlayList(item);
         }
 
         //private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
@@ -159,8 +170,8 @@ namespace MusicLibrary
 
 
     }
-    public class Params
-    {
+   public class Params
+   {
         public int MyProperty { get; set; }
-    }
+   }
 }

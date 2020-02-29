@@ -132,7 +132,7 @@
             </SplitView.Content>
 
         </SplitView>
-        <StackPanel Margin="0,200,600,0" Grid.Row="2">
+       <!-- <StackPanel Margin="0,200,600,0" Grid.Row="2">
             <ComboBox  x:Name="Delete1" Header="UserPlayLists" 
                              ItemsSource="{x:Bind Path=currentDataSource.getAllPlayLists()}" Height="62" Width="115"
                              SelectedItem= "{Binding SelectedItem.Content}" SelectedValuePath="Name">
@@ -143,14 +143,28 @@
                 </ComboBox.ItemTemplate>
 
             </ComboBox>
+            
+        </StackPanel>-->
+        <StackPanel Margin="0,200,600,0" Grid.Row="2">
+            <ListView Header="UserPlaylists" Name="PlayLists" 
+                ItemsSource="{x:Bind currentDataSource.getAllPlayLists()}" Grid.Row="1" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="local:PlayList">
+                            <StackPanel Orientation="Horizontal" Width="700">
+                                <TextBlock Name="textbox1" Text="{x:Bind Name}" Margin="10,10,10,0"/>
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                <!--<TextBlock Name="textbox6" Text="{x:Bind SelectedValue}" Margin="10,10,10,0"/>-->
+         </ListView>
             <Button Content="Delete"
                             Name="DeleteButton"
                             FontFamily="Arial"
                             Click="DeletePlaylistButton_Click"
                             HorizontalAlignment="Right"
                             Visibility="Visible" Width="80"/>
-        </StackPanel>
-
+         </StackPanel>
 
 
     </Grid>
