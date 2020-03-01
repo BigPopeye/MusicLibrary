@@ -35,7 +35,7 @@ namespace MusicLibrary
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
             SoundManager.GetAllSounds(sounds);
-            currentDataSource = new DataSource();
+            currentDataSource = new DataSource(); 
             
         }
         private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -73,8 +73,7 @@ namespace MusicLibrary
             if (result == ContentDialogResult.Primary)
             {
                 var text = ct.Text;
-                // ListBox1.DataContext = text;
-                // ListBox1.Items.Add(text);
+                
             }
             // if cancel button is clicked then textbox text will become null and dialog box window will be hidden
             else
