@@ -44,6 +44,8 @@ namespace MusicLibrary
 
         }
 
+
+
         private void Navigator_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             Navigator.IsBackEnabled = contentFrame.CanGoBack;
