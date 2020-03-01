@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,32 +24,15 @@ namespace MusicLibrary
     /// </summary>
     public sealed partial class GenresPage : Page
     {
-        private List<MenuItem> menuItems;
+
+        private ObservableCollection<Sound> sounds;
+
         public GenresPage()
         {
             this.InitializeComponent();
-            menuItems = new List<MenuItem>();
-            //Load pane
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/animals.png",
-            //    Category = SoundCategory.Animals
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/cartoon.png",
-            //    Category = SoundCategory.Cartoons
-            //});
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/taunt.png",
-                Category = SoundCategory.Taunts
-            });
-            menuItems.Add(new MenuItem
-            {
-                IconFile = "Assets/Icons/warning.png",
-                Category = SoundCategory.Warnings
-            });
+            sounds = new ObservableCollection<Sound>();
+            SoundManager.GetAllSounds(sounds);
+
         }
         public NavigationView backButton;
         private void GenreGridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -63,6 +47,39 @@ namespace MusicLibrary
             backButton.IsBackEnabled = false;
             
             base.OnNavigatedTo(e);
+        }
+        private void Button_one_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ElectronicPage));
+        }
+
+
+        private void Button_two_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(HipHopPage));
+        }
+        /*protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            Params result = (Params)e.Parameter;
+            base.OnNavigatedTo(e);
+        }*/
+
+        private void Button_three_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(InstrumentalPage));
+        }
+
+        private void Button_fourth_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MetalPage));
+        }
+        private void Button_fifth_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PopPage));
+        }
+        private void Button_sixth_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(RockPage));
         }
     }
 }

@@ -25,6 +25,7 @@ namespace MusicLibrary.Model
             sounds.Add(new Sound("Second Waltz", "James Last", "Classics From Russia", SoundCategory.Instrumental));
             sounds.Add(new Sound("The Tide Is High", "Atomic Kitten", "Video Hits", SoundCategory.Pop));
             sounds.Add(new Sound("Wrecking Ball", "Miley Cyrus", "Smash 2014 Vol.1", SoundCategory.Pop));
+            sounds.Add(new Sound("Last Of The Wilds", "Nightwish", "Dark Passion Play", SoundCategory.Metal));
 
             return sounds;
         }

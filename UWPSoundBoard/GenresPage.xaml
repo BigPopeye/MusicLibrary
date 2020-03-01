@@ -9,44 +9,147 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    
-    <Grid>
+    <Grid Margin="20,0,0,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" 
+                           MinHeight="110
+                           "/>
+            <RowDefinition/>
+            
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal">
-            <TextBlock x:Name="pageTitle" Text="All Genres"
-                       FontSize="32"
-                       Margin="16,16,0,0"/>
+            <TextBlock Name="CategoryTextBlock" 
+                   Text="Genres" 
+                   FontSize="40" 
+                   FontWeight="Thin"                             
+                   Margin="10,0,0,0" 
+                   VerticalAlignment="Center" 
+                   Height="60"/>
         </StackPanel>
         <Grid Grid.Row="1">
-            <GridView Name="GenreGridView"
-                      SelectionMode="None"
-                      IsItemClickEnabled="True"
-                      ItemsSource="{x:Bind menuItems}"
-                      ItemClick="GenreGridView_ItemClick">
+            <GridView ItemsSource="{x:Bind sounds}">
                 <GridView.ItemTemplate>
-                    <DataTemplate x:DataType="data:MenuItem" >
-                        <StackPanel >
-                            <Image Source="{x:Bind IconFile}"
-                                Height="35"
-                                Width="35"
-                                Margin="-10,10,0,10"
-                                />
-                            <TextBlock
-                            Text="{x:Bind Category}"
-                            FontSize="18"
-                            Margin="10,0,0,0"
-                            VerticalAlignment="Center" />
+                    <DataTemplate x:DataType="data:Sound">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock/>
+                            <!--<HyperlinkButton Grid.Column="0" x:Name="Button_one" Click="Button_one_Click">
+                                <Image Name="My Image" Source="{x:Bind IconFile}"
+                                Height="80"
+                                Width="80"
+                                Margin="20,20,60,10"/>
+                            </HyperlinkButton>
+                            <TextBlock Text="{x:Bind Category}"/>
+                            <HyperlinkButton/>-->                            
                         </StackPanel>
                     </DataTemplate>
                 </GridView.ItemTemplate>
-
             </GridView>
+            <GridView>
+                <Button Click="Button_one_Click"
+                        Width="150"
+                        CornerRadius="10"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        Background="White"               
+                        BorderBrush="GhostWhite"
+                       >
+                    <StackPanel>
+                        <Image Source="Assets/Icons/electronic.png"                
+                        Height="86"
+                        Width="110"/>
+                        <TextBlock  HorizontalAlignment="Center" FontSize="22">Electronic</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Button_two_Click"
+                        Width="150"
+                        CornerRadius="10" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"         
+                        Background="White"               
+                        BorderBrush="GhostWhite"
+                       >                  
+                    <StackPanel>
+                        <Image Source="Assets/Icons/hip-hop.png"  
+                        Height="86"
+                        Width="110"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="22">Hip Hop</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Button_three_Click"
+                        Width="150"
+                        CornerRadius="10" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        Background="White"               
+                        BorderBrush="GhostWhite" 
+                       >
+                    <StackPanel>
+                        <Image Source="Assets/Icons/instrumental.png"  
+                        Height="86"
+                        Width="110"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="22">Instrumental</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Button_fourth_Click"                   
+                        Width="150"
+                        CornerRadius="10" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Background="White"               
+                        BorderBrush="GhostWhite"
+                       >
+                    <StackPanel>
+                        <Image Source="Assets/Icons/metal.png"  
+                    Height="86"
+                    Width="110"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="22">Metal</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Button_fifth_Click"
+                        Width="150"
+                        CornerRadius="10" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Background="White"               
+                        BorderBrush="GhostWhite"
+                       >
+                    <StackPanel>
+                        <Image Source="Assets/Icons/pop.png" 
+                        Height="86"
+                        Width="110"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="22">Pop</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Click="Button_sixth_Click"
+                        Width="150"
+                        CornerRadius="10" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Background="White"               
+                        BorderBrush="GhostWhite"
+                       >
+                    <StackPanel>
+                        <Image Source="Assets/Icons/rock.png"
+                        Height="86"
+                        Width="110"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="22">Rock</TextBlock>
+                    </StackPanel>
+                </Button>
+            </GridView>
+            <!--<GridView Grid.Column="4">
+            <HyperlinkButton Click="Button_one_Click">
+                    <StackPanel>
+                        <TextBlock>Pop</TextBlock>
+                        <Image Source="Assets/Icons/pop.jpg"
+                                Height="80"
+                                Width="80"
+                                />
+                    </StackPanel>
+                </HyperlinkButton>
+                            <TextBlock Text="Pop"/><Button />
+                            <HyperlinkButton/>
+            </GridView>-->
         </Grid>
-        
     </Grid>
-    
-    
 </Page>
+    

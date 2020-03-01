@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="MusicLibrary.RockPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MusicLibrary"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data ="using:MusicLibrary.Model"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" 
+                           MinHeight="110
+                           "/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <MediaElement Name="MyMediaElement" AutoPlay="True"/>
+        <TextBlock Name="CategoryTextBlock" 
+                   Text="Rock" 
+                   FontSize="40" 
+                   FontWeight="Thin"                             
+                   Margin="10,0,0,30" 
+                   VerticalAlignment="Center"
+                   Height="60"/>
+
+        <ListView Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="CategoryTextBlock2" Text="Song" FontSize="15" Margin="70,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock3" Text="Artist" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock4" Text="Album" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                <TextBlock Name="CategoryTextBlock5" Text="Genre" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+            </StackPanel>
+
+
+        </ListView>
+
+        <ListView Grid.Row="1"
+                        Name="SoundGridView"
+                        SelectionMode="None"
+                        IsItemClickEnabled="True"
+                        ItemsSource="{x:Bind sounds}"
+                        ItemClick="SoundGridView_ItemClick"
+                        HorizontalAlignment="Left"  >
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="data:Sound">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="35" Height="35" Margin="20,20,0,0">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="{x:Bind ImageFile}"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <TextBlock Text="{x:Bind Name}" 
+                                               Margin="20,20,0,0"
+                                               Width="200"
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
+                        <TextBlock Text="{x:Bind Artist}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
+                        <TextBlock Text="{x:Bind Album}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center" 
+                                               FontSize="12">
+                        </TextBlock>
+                        <TextBlock Text="{x:Bind Category}" 
+                                               Margin="20,20,0,0"
+                                               Width="200" 
+                                               Height="20"
+                                               VerticalAlignment="Center"
+                                               FontSize="12 ">
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>
+

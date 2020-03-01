@@ -126,11 +126,23 @@
       <DependentUpon>ContentDialog1.xaml</DependentUpon>
     </Compile>
     <Compile Include="DataSource.cs" />
+    <Compile Include="ElectronicPage.xaml.cs">
+      <DependentUpon>ElectronicPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GenresPage.xaml.cs">
       <DependentUpon>GenresPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="HipHopPage.xaml.cs">
+      <DependentUpon>HipHopPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstrumentalPage.xaml.cs">
+      <DependentUpon>InstrumentalPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MetalPage.xaml.cs">
+      <DependentUpon>MetalPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\MenuItem.cs" />
     <Compile Include="Model\Sound.cs" />
@@ -139,7 +151,13 @@
     <Compile Include="PlaylistPage.xaml.cs">
       <DependentUpon>PlaylistPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PopPage.xaml.cs">
+      <DependentUpon>PopPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RockPage.xaml.cs">
+      <DependentUpon>RockPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubSongsPage.xaml.cs">
       <DependentUpon>SubSongsPage.xaml</DependentUpon>
     </Compile>
@@ -163,10 +181,12 @@
     <Content Include="Assets\Audio\HipHop\Sky High.mp3" />
     <Content Include="Assets\Audio\Pop\The Tide Is High.mp3" />
     <Content Include="Assets\Audio\Pop\Wrecking Ball.mp3" />
-    <Content Include="Assets\Icons\animals.png" />
-    <Content Include="Assets\Icons\cartoon.png" />
-    <Content Include="Assets\Icons\taunt.png" />
-    <Content Include="Assets\Icons\warning.png" />
+    <Content Include="Assets\Icons\electronic.png" />
+    <Content Include="Assets\Icons\hip-hop.png" />
+    <Content Include="Assets\Icons\instrumental.png" />
+    <Content Include="Assets\Icons\metal.png" />
+    <Content Include="Assets\Icons\pop.png" />
+    <Content Include="Assets\Icons\rock.png" />
     <Content Include="Assets\Images\Electronic\Memories Of You.png" />
     <Content Include="Assets\Images\HipHop\Hey Mama.png" />
     <Content Include="Assets\Images\HipHop\La La Land.png" />
@@ -215,7 +235,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ElectronicPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GenresPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HipHopPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstrumentalPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -223,7 +255,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MetalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PlaylistPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RockPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

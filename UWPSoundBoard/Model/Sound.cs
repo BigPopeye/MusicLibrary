@@ -14,9 +14,7 @@ namespace MusicLibrary.Model
         Instrumental,
         Metal,
         Pop,
-        Rock,
-        Taunts,
-        Warnings
+        Rock
     }
     public class Sound
     {
