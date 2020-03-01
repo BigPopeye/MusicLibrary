@@ -21,40 +21,6 @@
                 <muxc:NavigationViewItem Icon="Emoji2" Content="Gernes" Tag="GernesMenu" />
                 <NavigationViewItemSeparator/>
                 <muxc:NavigationViewItem Grid.Column="0" Icon="Play" Content="Playlist" Tag="PlaylistMenu"/>
-
-                <Grid Margin="-16,0,0,0" Width="280">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="44"/>
-                    </Grid.ColumnDefinitions>
-
-                    <!--<Button Content="&#xE948;" x:Name="AddPlaylistButton" Click="AddPlaylistButton_Click" Grid.Column="0" HorizontalAlignment="Right"/>-->
-                </Grid>
-                <!--<StackPanel Margin="0,150,0,0" >
-                    <ListView x:Name="PlayLists"
-                ItemsSource="{x:Bind Path=currentDataSource.getAllPlayLists()}"
-                  SelectedItem= "{Binding SelectedItem.Content}" SelectedValuePath="Name" SelectionChanged="PlayLists_SelectionChanged">
-
-                        <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="local:PlayList">
-                                <StackPanel Orientation="Horizontal" Width="700">
-                                    <TextBlock x:Name="textbox1" Text="{x:Bind Path=Name}" Width="100"/>
-
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-
-                    </ListView>
-
-                    <Button Content="Delete"
-                            x:Name="DeleteButton"
-                            FontFamily="Arial"
-                            Click="DeletePlaylistButton_Click"
-                            HorizontalAlignment="Right"
-                            Visibility="Visible" Width="80"
-                    VerticalAlignment="Bottom"/>
-                </StackPanel>-->
-
             </muxc:NavigationView.MenuItems>
             <Frame x:Name="contentFrame">
                 <Frame.ContentTransitions>
