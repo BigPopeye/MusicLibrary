@@ -27,6 +27,7 @@ namespace MusicLibrary
     public sealed partial class AllSongsPage : Page
     {
         private ObservableCollection<Sound> sounds;
+        private ObservableCollection<PlayList> playlists;
         DataSource currentDataSource;
         string p;
 
@@ -34,7 +35,11 @@ namespace MusicLibrary
         {
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
+            playlists = new ObservableCollection<PlayList >();
+
+
             SoundManager.GetAllSounds(sounds);
+            
             currentDataSource = new DataSource(); 
             
         }
@@ -96,45 +101,23 @@ namespace MusicLibrary
 
             var flyoutMenu1 = new MenuFlyoutItem();
             flyoutMenu1.Text = "Create Playlist";
+            var seperator = new MenuFlyoutSeparator();
             var flyoutMenu2 = new MenuFlyoutItem();
             flyoutMenu2.Text = "Add To >";
 
             var flyout = new MenuFlyout();
             flyout.Items.Add(flyoutMenu1);
+            
             flyout.Items.Add(flyoutMenu2);
 
+            foreach (PlayList playlist in playlists)
+            {
+                var flyoutmenu = new MenuFlyoutItem();
+                flyoutmenu.Text = playlist.Name;
+                flyout.Items.Add(flyoutmenu);
+            }
             var button = (Button)sender;
             button.Flyout = flyout;
         }
-
-        //public List<MenuFlyoutItemBase> InitFlyoutItems()
-        //{
-        //    var list = new List<MenuFlyoutItemBase>
-        //{
-        //    new MenuFlyoutItem {Text="Create Playlist" },
-        //    //new MenuFlyoutItem {Text="Add To Playlist" },
-        //    new MenuFlyoutSubItem { Text="Add To Playlist"  }
-        //};
-        //    ((MenuFlyoutSubItem)list[3]).Items.Add(new MenuFlyoutItem { Text = "Old Sub Item 1" });
-        //    ((MenuFlyoutSubItem)list[3]).Items.Add(new MenuFlyoutItem { Text = "Old Sub Item 2" });
-        //    ((MenuFlyoutSubItem)list[3]).Items.Add(new MenuFlyoutItem { Text = "Old Sub Item 3" });
-        //    ((MenuFlyoutSubItem)list[3]).Items.Add(new MenuFlyoutItem { Text = "Old Sub Item 4" });
-        //    return list;
-        //}
-
-        //public MenuFlyoutItem GetPlaylist MenuFlyout(ObservableCollection<PlayList> playlists)
-        //{
-        //    MenuFlyoutItem menuFlyout = new MenuFlyoutItem();
-
-        //    foreach(var playlist in playlists)
-        //    {
-        //        var item = new MenuFlyoutItem()
-        //        {
-        //            Text = playlist.Name
-        //        };
-        //        menuFlyout;
-        //    }
-        //    return menuFlyout;
-        //}
     }
 }
