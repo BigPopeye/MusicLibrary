@@ -40,7 +40,7 @@ namespace MusicLibrary
         public MainPage()
         {
             this.InitializeComponent();
-           DataSource currentDataSource = new DataSource();
+            currentDataSource = new DataSource();
             //sounds = new ObservableCollection<Sound>();
             //SoundManager.GetAllSounds(sounds);
 
@@ -75,14 +75,14 @@ namespace MusicLibrary
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            if (!MySplitView.IsPaneOpen)
-            {
-                SingleAddPlaylistButton.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
-            }
+           // if (!MySplitView.IsPaneOpen)
+           // {
+           //     SingleAddPlaylistButton.Visibility = Visibility.Visible;
+           // }
+           // else
+           // {
+           //     SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
+           // }
             
         }
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -149,9 +149,26 @@ namespace MusicLibrary
         private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
         {
             
-          //  string item = Delete1.SelectedValue.ToString();
-                  
-           // currentDataSource.DeletePlayList(item);
+            if(PlayLists.SelectedValue != null)
+            {
+                string item = PlayLists.SelectedValue.ToString();
+                currentDataSource.DeletePlayList(item);
+            }          
+        }
+
+        private void MenuItemsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void contentFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
 
         //private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
@@ -170,7 +187,7 @@ namespace MusicLibrary
 
 
     }
-   public class Params
+    public class Params
    {
         public int MyProperty { get; set; }
    }

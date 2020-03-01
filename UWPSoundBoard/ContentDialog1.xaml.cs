@@ -23,7 +23,7 @@ namespace MusicLibrary
             "Text", typeof(string), typeof(ContentDialog1), new PropertyMetadata(default(string)));
 
        TextBox TextBox1 = new TextBox();
-        ContentDialog1 ct1 = new ContentDialog1();
+        //ContentDialog1 ct1 = new ContentDialog1();
 
         public ContentDialog1()
         {
