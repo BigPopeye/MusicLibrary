@@ -101,8 +101,9 @@
                                 </TextBlock>
                                 <Button Content="Add To Playlist" x:Name="HoverButton" 
                                                 IsTabStop="False" HorizontalAlignment="Right" 
-                                                Visibility="Collapsed" Command="{x:Bind Command}">
-                                    <Button.Flyout>
+                                                Visibility="Collapsed" Command="{x:Bind Command}"
+                                        Click="HoverButton_Click">
+                                    <!--Button.Flyout>
                                         <MenuFlyout>
                                             <MenuFlyoutItem x:Name="MenuAddPlaylist" Text="Create New Playlist" Click="MenuAddPlaylist_Click"/>
                                             <MenuFlyoutSubItem Text="Add to Playlist" >
@@ -110,7 +111,7 @@
                                                 </MenuFlyoutItem>
                                             </MenuFlyoutSubItem>
                                         </MenuFlyout>
-                                    </Button.Flyout>
+                                    </Button.Flyout>-->
                                 </Button>
 
                                 </StackPanel>
