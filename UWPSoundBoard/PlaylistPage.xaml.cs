@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,11 +24,14 @@ namespace MusicLibrary
     public sealed partial class PlaylistPage : Page
     {
         string p;
-        DataSource currentDataSource;
+        private ObservableCollection<PlayList> playlists;
+        //DataSource currentDataSource;
         public PlaylistPage()
         {
             this.InitializeComponent();
-            currentDataSource = new DataSource();
+            playlists = new ObservableCollection<PlayList>();
+            DataSource.getAllPlayLists(ref playlists);
+            //currentDataSource = new DataSource();
         }
         private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
@@ -54,8 +58,8 @@ namespace MusicLibrary
             if (p != " ")
             {
                 PlayList UP = new PlayList(p);
-                currentDataSource.AddPlayList(UP);
-
+                DataSource.AddPlayList(UP);
+                DataSource.getAllPlayLists(ref playlists);
 
             }
         }
@@ -78,7 +82,7 @@ namespace MusicLibrary
             if (PlayLists.SelectedValue != null)
             {
                 string item = PlayLists.SelectedValue.ToString();
-                currentDataSource.DeletePlayList(item);
+                DataSource.DeletePlayList(item);
             }
         }
         private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)

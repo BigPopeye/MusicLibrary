@@ -36,11 +36,11 @@ namespace MusicLibrary
         private ObservableCollection<Sound> sounds;
         private List<MenuItem> menuItems;
         string p;
-        DataSource currentDataSource;
+        //DataSource currentDataSource;
         public MainPage()
         {
             this.InitializeComponent();
-            currentDataSource = new DataSource();
+            //currentDataSource = new DataSource();
 
         }
 
