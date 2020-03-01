@@ -22,7 +22,8 @@ namespace MusicLibrary
         public static readonly DependencyProperty TextProperty = DependencyProperty.Register(
             "Text", typeof(string), typeof(ContentDialog1), new PropertyMetadata(default(string)));
 
-        TextBox TextBox1 = new TextBox();
+       TextBox TextBox1 = new TextBox();
+        //ContentDialog1 ct1 = new ContentDialog1();
 
         public ContentDialog1()
         {
@@ -36,11 +37,12 @@ namespace MusicLibrary
         private void ContentDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
 
-
+            //var text = ct1.Text;
         }
         private void ContentDialog_SecondaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
         {
             //TextBox1.Text = " ";
+            //ct1.Hide();
 
         }
 

@@ -14,6 +14,15 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Windows;
+using System.Globalization;
+using System.Drawing;
+using System.ComponentModel;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -32,53 +41,80 @@ namespace MusicLibrary
         {
             this.InitializeComponent();
             currentDataSource = new DataSource();
+            //sounds = new ObservableCollection<Sound>();
+            //SoundManager.GetAllSounds(sounds);
+
+            //menuItems = new List<MenuItem>();
+            ////Load pane
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/animals.png",
+            //    Category = SoundCategory.Animals
+            //});
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/cartoon.png",
+            //    Category = SoundCategory.Cartoons
+            //});
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/taunt.png",
+            //    Category = SoundCategory.Taunts
+            //});
+            //menuItems.Add(new MenuItem
+            //{
+            //    IconFile = "Assets/Icons/warning.png",
+            //    Category = SoundCategory.Warnings
+            //});
+
         }
 
-        private void Navigator_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+
+        
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
-            Navigator.IsBackEnabled = contentFrame.CanGoBack;
-            var item = sender.MenuItems.OfType<NavigationViewItem>()
-                .First(x => (string)x.Content == (string)args.InvokedItem);
-            NaviView_Navigate(item as NavigationViewItem);
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+           // if (!MySplitView.IsPaneOpen)
+           // {
+           //     SingleAddPlaylistButton.Visibility = Visibility.Visible;
+           // }
+           // else
+           // {
+           //     SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
+           // }
             
         }
-        private void NaviView_Navigate(NavigationViewItem item)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            switch (item.Tag)
-            {
-                case "AllSongsMenu":
-                    contentFrame.Navigate(typeof(AllSongsPage),Navigator);
-                    break;
-                case "GernesMenu":
-                    contentFrame.Navigate(typeof(GenresPage),Navigator);
-                    break;
-                case "PlaylistMenu":
-                    contentFrame.Navigate(typeof(PlaylistPage));
-                    break;
-            }
+            //SoundManager.GetAllSounds(sounds);
+            ////CategoryTextBlock.Text = "All Sounds";
+            //MenuItemsListView.SelectedItem = null;
+            //BackButton.Visibility = Visibility.Collapsed;
         }
 
-        // Deal with Back Button logic
-        private void Navigator_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
+        private void AllSongsMenu_Click(object sender, RoutedEventArgs e)
         {
-            On_BackRequested();
+            //this.Frame.Navigate(typeof(GenresPage));
+            contentFrame.Navigate(typeof(AllSongsPage));
         }
-        private bool On_BackRequested()
+        private void GenresMenu_Click(object sender, RoutedEventArgs e)
         {
-            if (!contentFrame.CanGoBack)
-                return false;
-
-            if(Navigator.IsPaneOpen &&
-                (Navigator.DisplayMode == NavigationViewDisplayMode.Compact ||
-                Navigator.DisplayMode == NavigationViewDisplayMode.Minimal))
-                return false;
-            
-
-            contentFrame.GoBack();
-            return true;
+            //this.Frame.Navigate(typeof(GenresPage));
+            contentFrame.Navigate(typeof(GenresPage), new Params() { MyProperty = 42 });
         }
 
-       
+        private void PlaylistMenu_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SingleAddPlaylistButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
         private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
 
@@ -96,7 +132,7 @@ namespace MusicLibrary
             else
             {
                 ct.Text = " ";
-                ct.Hide();
+                //ct.Hide();
             }
             p = ct.Text;
 
@@ -109,15 +145,50 @@ namespace MusicLibrary
 
             }
         }
+
         private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
         {
             
-            string item = Delete1.SelectedValue.ToString();
-                  
-            currentDataSource.DeletePlayList(item);
+            if(PlayLists.SelectedValue != null)
+            {
+                string item = PlayLists.SelectedValue.ToString();
+                currentDataSource.DeletePlayList(item);
+            }          
         }
+
+        private void MenuItemsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void contentFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
+
+        private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        //private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
+        //{
+        //    var menuItem = (MenuItem)e.ClickedItem;
+        //    CategoryTextBlock.Text = menuItem.Category.ToString();
+        //    SoundManager.GetSoundsByCategory(sounds, menuItem.Category);
+        //    BackButton.Visibility = Visibility.Visible;
+        //}
+
+        //private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
+        //{
+        //    var sound = (Sound)e.ClickedItem;
+        //    MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
+        //}
 
 
     }
-    
+    public class Params
+   {
+        public int MyProperty { get; set; }
+   }
 }
