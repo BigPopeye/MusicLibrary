@@ -9,39 +9,39 @@ using MusicLibrary.Model;
 
 namespace MusicLibrary
 {
-     class DataSource
+    public static class DataSource
     {
         //define collections
-        private ObservableCollection<Sound> allSongs;
-        private ObservableCollection<PlayList> allPlayLists;
+        private static ObservableCollection<Sound> allSongs;
+        private static ObservableCollection<PlayList> allPlayLists;
 
-        public DataSource()
+        static DataSource()
         {
             allSongs = new ObservableCollection<Sound>();
             allPlayLists = new ObservableCollection<PlayList>();
         }
 
-        public ObservableCollection<Sound> getAllSongs()
+        public static ObservableCollection<Sound> getAllSongs()
         {
             return allSongs;
         }
 
-        public ObservableCollection<PlayList> getAllPlayLists()
+        public static void  getAllPlayLists(ref ObservableCollection<PlayList> playlists)
         {
-            return allPlayLists;
+            playlists = allPlayLists;
         }
 
-        public void AddSong(Sound newsong)
+        public static void AddSong(Sound newsong)
         {
             allSongs.Add(newsong);
         }
 
-        public void AddPlayList(PlayList newPlayList)
+        public static void AddPlayList(PlayList newPlayList)
         {
             allPlayLists.Add(newPlayList);
         }
 
-        public void DeletePlayList(string nameToDelete)
+        public static void DeletePlayList(string nameToDelete)
         {
             //allPlayLists.Remove(playlistobject);
             PlayList objectToDelete = null;
@@ -58,19 +58,6 @@ namespace MusicLibrary
             return;
         }
 
-        public Guid GetSongID(string name)
-        {
-            Sound selectedSong = null;
-            foreach (Sound s in allSongs)
-            {
-                if (string.Equals(s.Name, name))
-                {
-                    selectedSong = s;
-                }
-            }
-
-            return selectedSong.getSongID();
-
-        }
+       
     }
 }

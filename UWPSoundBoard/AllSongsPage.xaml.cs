@@ -28,19 +28,17 @@ namespace MusicLibrary
     {
         private ObservableCollection<Sound> sounds;
         private ObservableCollection<PlayList> playlists;
-        DataSource currentDataSource;
+        //DataSource currentDataSource;
         string p;
 
         public AllSongsPage()
         {
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
-            playlists = new ObservableCollection<PlayList >();
-
-
+            playlists = new ObservableCollection<PlayList>();
+            DataSource.getAllPlayLists(ref playlists);
             SoundManager.GetAllSounds(sounds);
-            
-            currentDataSource = new DataSource(); 
+            //currentDataSource = new DataSource(); 
             
         }
         private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
@@ -92,7 +90,7 @@ namespace MusicLibrary
             if (p != " ")
             {
                 PlayList UP = new PlayList(p);
-                currentDataSource.AddPlayList(UP);
+                DataSource.AddPlayList(UP);
             }
         }
 

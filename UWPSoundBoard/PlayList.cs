@@ -8,7 +8,7 @@ using MusicLibrary.Model;
 
 namespace MusicLibrary
 {
-    class PlayList
+   public class PlayList
     {
         //define properties of playlist
         List<Sound> SongList;
@@ -48,17 +48,6 @@ namespace MusicLibrary
         }
 
 
-        public void AddSongID(Guid songID, DataSource source)
-        {
-            foreach (Sound s in source.getAllSongs())
-            {
-                if (s.getSongID() == songID)
-                {
-                    SongList.Add(s);
-                    return;
-                }
-            }
-
-        }
+       
     }
 }

@@ -18,7 +18,7 @@
                              IsSettingsVisible="False">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem Icon="MusicInfo" Content="My Songs" Tag="AllSongsMenu" />
-                <muxc:NavigationViewItem Icon="Emoji2" Content="Gernes" Tag="GernesMenu" />
+                <muxc:NavigationViewItem Icon="Emoji2" Content="Genres" Tag="GernesMenu" />
                 <NavigationViewItemSeparator/>
                 <muxc:NavigationViewItem Grid.Column="0" Icon="Play" Content="Playlist" Tag="PlaylistMenu"/>
             </muxc:NavigationView.MenuItems>
