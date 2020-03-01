@@ -9,11 +9,11 @@ using MusicLibrary.Model;
 
 namespace MusicLibrary
 {
-    class DataSource
+     class DataSource
     {
         //define collections
-        ObservableCollection<Sound> allSongs;
-        ObservableCollection<PlayList> allPlayLists;
+        private ObservableCollection<Sound> allSongs;
+        private ObservableCollection<PlayList> allPlayLists;
 
         public DataSource()
         {

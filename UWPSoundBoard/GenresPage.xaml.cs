@@ -50,13 +50,13 @@ namespace MusicLibrary
         }
         private void Button_one_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ElectronicPage));
+            this.Frame.Navigate(typeof(ElectronicPage), backButton);
         }
 
 
         private void Button_two_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(HipHopPage));
+            this.Frame.Navigate(typeof(HipHopPage),backButton);
         }
         /*protected override void OnNavigatedTo(NavigationEventArgs e)
         {
@@ -66,20 +66,20 @@ namespace MusicLibrary
 
         private void Button_three_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(InstrumentalPage));
+            this.Frame.Navigate(typeof(InstrumentalPage),backButton);
         }
 
         private void Button_fourth_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MetalPage));
+            this.Frame.Navigate(typeof(MetalPage),backButton);
         }
         private void Button_fifth_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PopPage));
+            this.Frame.Navigate(typeof(PopPage),backButton);
         }
         private void Button_sixth_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(RockPage));
+            this.Frame.Navigate(typeof(RockPage),backButton);
         }
     }
 }

@@ -61,58 +61,57 @@
                             </VisualStateManager.VisualStateGroups>
                             <SwipeControl>
                                  <StackPanel Orientation="Horizontal">
-                        <Ellipse Width="35" Height="35" Margin="20,20,0,0">
-                            <Ellipse.Fill>
-                                <ImageBrush ImageSource="{x:Bind ImageFile}"/>
-                            </Ellipse.Fill>
-                        </Ellipse>
+                                 <Ellipse Width="35" Height="35" Margin="20,20,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="{x:Bind ImageFile}"/>
+                                    </Ellipse.Fill>
+                                 </Ellipse>
 
-                        <TextBlock Text="{x:Bind Name}" 
+                                 <TextBlock Text="{x:Bind Name}" 
                                                Margin="20,20,0,0"
                                                Width="200"
                                                Height="20"
                                                VerticalAlignment="Center" 
                                                FontSize="12">
-                        </TextBlock>
+                                 </TextBlock>
 
-                        <TextBlock Text="{x:Bind Artist}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
-                        </TextBlock>
+                                <TextBlock Text="{x:Bind Artist}" 
+                                                        Margin="20,20,0,0"
+                                                        Width="200" 
+                                                        Height="20"
+                                                        VerticalAlignment="Center" 
+                                                        FontSize="12">
+                                </TextBlock>
 
-                        <TextBlock Text="{x:Bind Album}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
-                        </TextBlock>
+                                <TextBlock Text="{x:Bind Album}" 
+                                                        Margin="20,20,0,0"
+                                                        Width="200" 
+                                                        Height="20"
+                                                        VerticalAlignment="Center" 
+                                                        FontSize="12">
+                                </TextBlock>
 
-                        <TextBlock Text="{x:Bind Category}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center"
-                                               FontSize="12 ">
+                                <TextBlock Text="{x:Bind Category}" 
+                                                        Margin="20,20,0,0"
+                                                        Width="200" 
+                                                        Height="20"
+                                                        VerticalAlignment="Center"
+                                                        FontSize="12 ">
 
-                        </TextBlock>
-                        <Button Content="Add To Playlist" x:Name="HoverButton" 
-                                        IsTabStop="False" HorizontalAlignment="Right" 
-                                        Visibility="Collapsed" Command="{x:Bind Command}">
-                            <Button.Flyout>
-                                <MenuFlyout>
-                                    <MenuFlyoutItem x:Name="MenuAddPlaylist" Text="Create New Playlist" Click="MenuAddPlaylist_Click"/>
-                                    <MenuFlyoutSubItem Text="Add to Playlist">
-                                                    <MenuFlyoutItem>
-                                                       
-                                                    </MenuFlyoutItem>
-                                    </MenuFlyoutSubItem>
-                                </MenuFlyout>
-                            </Button.Flyout>
-                        </Button>
+                                </TextBlock>
+                                <Button Content="Add To Playlist" x:Name="HoverButton" 
+                                                IsTabStop="False" HorizontalAlignment="Right" 
+                                                Visibility="Collapsed" Command="{x:Bind Command}">
+                                    <Button.Flyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem x:Name="MenuAddPlaylist" Text="Create New Playlist" Click="MenuAddPlaylist_Click"/>
+                                            <MenuFlyoutSubItem Text="Add to Playlist" >
+                                                <MenuFlyoutItem x:Name="PlaylistFlyout">
+                                                </MenuFlyoutItem>
+                                            </MenuFlyoutSubItem>
+                                        </MenuFlyout>
+                                    </Button.Flyout>
+                                </Button>
 
                                 </StackPanel>
                             </SwipeControl>

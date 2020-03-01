@@ -41,154 +41,108 @@ namespace MusicLibrary
         {
             this.InitializeComponent();
             currentDataSource = new DataSource();
-            //sounds = new ObservableCollection<Sound>();
-            //SoundManager.GetAllSounds(sounds);
-
-            //menuItems = new List<MenuItem>();
-            ////Load pane
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/animals.png",
-            //    Category = SoundCategory.Animals
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/cartoon.png",
-            //    Category = SoundCategory.Cartoons
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/taunt.png",
-            //    Category = SoundCategory.Taunts
-            //});
-            //menuItems.Add(new MenuItem
-            //{
-            //    IconFile = "Assets/Icons/warning.png",
-            //    Category = SoundCategory.Warnings
-            //});
 
         }
 
-
-        
-
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        private void Navigator_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-           // if (!MySplitView.IsPaneOpen)
-           // {
-           //     SingleAddPlaylistButton.Visibility = Visibility.Visible;
-           // }
-           // else
-           // {
-           //     SingleAddPlaylistButton.Visibility = Visibility.Collapsed;
-           // }
-            
-        }
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            //SoundManager.GetAllSounds(sounds);
-            ////CategoryTextBlock.Text = "All Sounds";
-            //MenuItemsListView.SelectedItem = null;
-            //BackButton.Visibility = Visibility.Collapsed;
-        }
-
-        private void AllSongsMenu_Click(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(GenresPage));
-            contentFrame.Navigate(typeof(AllSongsPage));
-        }
-        private void GenresMenu_Click(object sender, RoutedEventArgs e)
-        {
-            //this.Frame.Navigate(typeof(GenresPage));
-            contentFrame.Navigate(typeof(GenresPage), new Params() { MyProperty = 42 });
-        }
-
-        private void PlaylistMenu_Click(object sender, RoutedEventArgs e)
-        {
+            Navigator.IsBackEnabled = contentFrame.CanGoBack;
+            var item = sender.MenuItems.OfType<NavigationViewItem>()
+                .First(x => (string)x.Content == (string)args.InvokedItem);
+            NaviView_Navigate(item as NavigationViewItem);
 
         }
-
-        private void SingleAddPlaylistButton_Click(object sender, RoutedEventArgs e)
+        private void NaviView_Navigate(NavigationViewItem item)
         {
-
-        }
-
-
-        private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
-        {
-
-            ContentDialog1 ct = new ContentDialog1();
-            var result = await ct.ShowAsync();
-
-            //if create button on dialog box is created then textbox content will go in text
-            if (result == ContentDialogResult.Primary)
+            switch (item.Tag)
             {
-                var text = ct.Text;
-                // ListBox1.DataContext = text;
-                // ListBox1.Items.Add(text);
-            }
-            // if cancel button is clicked then textbox text will become null and dialog box window will be hidden
-            else
-            {
-                ct.Text = " ";
-                //ct.Hide();
-            }
-            p = ct.Text;
-
-            // to add playlist with the name typed in textbox in list of playlists
-            if (p != " ")
-            {
-                PlayList UP = new PlayList(p);
-                currentDataSource.AddPlayList(UP);
-
-
+                case "AllSongsMenu":
+                    contentFrame.Navigate(typeof(AllSongsPage), Navigator);
+                    break;
+                case "GernesMenu":
+                    contentFrame.Navigate(typeof(GenresPage), Navigator);
+                    break;
+                case "PlaylistMenu":
+                    contentFrame.Navigate(typeof(PlaylistPage));
+                    break;
             }
         }
 
-        private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
+        // Deal with Back Button logic
+        private void Navigator_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
         {
-            
-            if(PlayLists.SelectedValue != null)
-            {
-                string item = PlayLists.SelectedValue.ToString();
-                currentDataSource.DeletePlayList(item);
-            }          
+            On_BackRequested();
+        }
+        private bool On_BackRequested()
+        {
+            if (!contentFrame.CanGoBack)
+                return false;
+
+            if (Navigator.IsPaneOpen &&
+                (Navigator.DisplayMode == NavigationViewDisplayMode.Compact ||
+                Navigator.DisplayMode == NavigationViewDisplayMode.Minimal))
+                return false;
+
+
+            contentFrame.GoBack();
+            return true;
         }
 
-        private void MenuItemsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void contentFrame_Navigated(object sender, NavigationEventArgs e)
-        {
-
-        }
-
-        private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        //private void MenuItemsListView_ItemClick(object sender, ItemClickEventArgs e)
+        //private void SingleAddPlaylistButton_Click(object sender, RoutedEventArgs e)
         //{
-        //    var menuItem = (MenuItem)e.ClickedItem;
-        //    CategoryTextBlock.Text = menuItem.Category.ToString();
-        //    SoundManager.GetSoundsByCategory(sounds, menuItem.Category);
-        //    BackButton.Visibility = Visibility.Visible;
+
         //}
 
-        //private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
+
+        //private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
         //{
-        //    var sound = (Sound)e.ClickedItem;
-        //    MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
+
+        //    ContentDialog1 ct = new ContentDialog1();
+        //    var result = await ct.ShowAsync();
+
+        //    //if create button on dialog box is created then textbox content will go in text
+        //    if (result == ContentDialogResult.Primary)
+        //    {
+        //        var text = ct.Text;
+        //        // ListBox1.DataContext = text;
+        //        // ListBox1.Items.Add(text);
+        //    }
+        //    // if cancel button is clicked then textbox text will become null and dialog box window will be hidden
+        //    else
+        //    {
+        //        ct.Text = " ";
+        //        //ct.Hide();
+        //    }
+        //    p = ct.Text;
+
+        //    // to add playlist with the name typed in textbox in list of playlists
+        //    if (p != " ")
+        //    {
+        //        PlayList UP = new PlayList(p);
+        //        currentDataSource.AddPlayList(UP);
+
+
+        //    }
         //}
+
+        //private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
+        //{
+            
+        //    if(PlayLists.SelectedValue != null)
+        //    {
+        //        string item = PlayLists.SelectedValue.ToString();
+        //        currentDataSource.DeletePlayList(item);
+        //    }          
+        //}
+
+      
+
+        //private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+
+        //}
+
 
 
     }
-    public class Params
-   {
-        public int MyProperty { get; set; }
-   }
 }

@@ -36,7 +36,7 @@ namespace MusicLibrary
             sounds = new ObservableCollection<Sound>();
             SoundManager.GetAllSounds(sounds);
             currentDataSource = new DataSource();
-
+            
         }
         private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -89,9 +89,22 @@ namespace MusicLibrary
             {
                 PlayList UP = new PlayList(p);
                 currentDataSource.AddPlayList(UP);
-
-
             }
         }
+
+        //public MenuFlyoutItem GetPlaylist MenuFlyout(ObservableCollection<PlayList> playlists)
+        //{
+        //    MenuFlyoutItem menuFlyout = new MenuFlyoutItem();
+           
+        //    foreach(var playlist in playlists)
+        //    {
+        //        var item = new MenuFlyoutItem()
+        //        {
+        //            Text = playlist.Name
+        //        };
+        //        menuFlyout;
+        //    }
+        //    return menuFlyout;
+        //}
     }
 }

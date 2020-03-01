@@ -42,5 +42,11 @@ namespace MusicLibrary
             var sound = (Sound)e.ClickedItem;
             MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var backButton = (NavigationView)e.Parameter;
+            backButton.IsBackEnabled = true;
+            base.OnNavigatedTo(e);
+        }
     }
 }

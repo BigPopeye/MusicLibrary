@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using MusicLibrary.Model;
 
 namespace MusicLibrary
@@ -12,6 +13,7 @@ namespace MusicLibrary
         //define properties of playlist
         List<Sound> SongList;
         string CoverImagePath;
+        public ICommand Command { get; set; }
         public string Name { get; set; }
 
 
