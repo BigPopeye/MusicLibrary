@@ -1,3 +1,6 @@
 # MusicLibray
-Assignment 1 
-![UseCase-MusicLibrary](https://user-images.githubusercontent.com/34418672/75646391-5b4fd200-5bfe-11ea-8961-821263f9b793.jpg)
+###Assignment 1 
+
+* Use Case 
+
+![UseCase-MusicLibrary-Page-2](https://user-images.githubusercontent.com/34418672/75646455-89cdad00-5bfe-11ea-931b-d005a5b5bc9a.jpg)
