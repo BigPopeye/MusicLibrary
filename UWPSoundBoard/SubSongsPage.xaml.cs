@@ -36,11 +36,11 @@ namespace MusicLibrary
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var backButton = (NavigationView)e.Parameter;
-            backButton.IsBackEnabled = true;
+            var playlist = (PlayList)e.Parameter;
+            
             base.OnNavigatedTo(e);
         }
-        private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
+        private void SoundListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             var sound = (Sound)e.ClickedItem;
             MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);

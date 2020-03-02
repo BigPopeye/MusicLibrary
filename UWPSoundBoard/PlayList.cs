@@ -11,7 +11,7 @@ namespace MusicLibrary
    public class PlayList
     {
         //define properties of playlist
-        List<Sound> SongList;
+        public List<Sound> SongList;
         string CoverImagePath;
         public ICommand Command { get; set; }
         public string Name { get; set; }
@@ -34,19 +34,6 @@ namespace MusicLibrary
         {
             return Name;
         }
-
-        //define functions
-        //add song to playlist
-        public void AddSong(Sound newsong)
-        {
-            SongList.Add(newsong);
-        }
-        //Delete song to playlist
-        public void DeleteSong(Sound songobject)
-        {
-            SongList.Remove(songobject);
-        }
-
 
        
     }

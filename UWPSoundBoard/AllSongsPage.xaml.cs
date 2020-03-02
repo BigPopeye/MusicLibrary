@@ -41,11 +41,12 @@ namespace MusicLibrary
             //currentDataSource = new DataSource(); 
             
         }
-        private void SoundGridView_ItemClick(object sender, ItemClickEventArgs e)
+        private void SoundListView_ItemClick(object sender, ItemClickEventArgs e)
         {
             var sound = (Sound)e.ClickedItem;
             MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
         }
+
 
         private void ListViewSwipeContainer_PointerEntered(object sender, PointerRoutedEventArgs e)
         {
@@ -53,6 +54,8 @@ namespace MusicLibrary
             {
                 VisualStateManager.GoToState(sender as Control, "HoverButtonsShown", true);
             }
+            var test = e.Pointer.GetType();
+            
         }
 
         private void ListViewSwipeContainer_PointerExited(object sender, PointerRoutedEventArgs e)
@@ -69,6 +72,12 @@ namespace MusicLibrary
 
         private async void MenuAddPlaylist_Click(object sender, RoutedEventArgs e)
         {
+            var parent = VisualTreeHelper.GetParent(this);
+            while(!(parent is UserControl))
+            {
+                parent = VisualTreeHelper.GetParent(parent);
+            }
+            //var test = (parent as UserControl).GetValue();
             ContentDialog1 ct = new ContentDialog1();
             var result = await ct.ShowAsync();
 
@@ -99,6 +108,7 @@ namespace MusicLibrary
 
             var flyoutMenu1 = new MenuFlyoutItem();
             flyoutMenu1.Text = "Create Playlist";
+            flyoutMenu1.Click += MenuAddPlaylist_Click;
             var seperator = new MenuFlyoutSeparator();
             var flyoutMenu2 = new MenuFlyoutItem();
             flyoutMenu2.Text = "Add To >";
@@ -112,10 +122,29 @@ namespace MusicLibrary
             {
                 var flyoutmenu = new MenuFlyoutItem();
                 flyoutmenu.Text = playlist.Name;
+                flyoutmenu.Click += MenuFlyoutItem_Click;
                 flyout.Items.Add(flyoutmenu);
             }
             var button = (Button)sender;
             button.Flyout = flyout;
+        }
+
+        private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
+        {
+            if(SoundListView.SelectedItem != null)
+            {
+                var song = (Sound)SoundListView.SelectedItem;
+                MenuFlyoutItem selectedItem = sender as MenuFlyoutItem;
+
+                DataSource.AddSongToPlayList(song, selectedItem.Text.ToString());
+            }
+            
+        }
+
+        private void PalySong_Click(object sender, RoutedEventArgs e)
+        {
+            //var sound = (Sound)e;
+            //MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
         }
     }
 }

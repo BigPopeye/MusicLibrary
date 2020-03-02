@@ -31,9 +31,15 @@ namespace MusicLibrary
             playlists = allPlayLists;
         }
 
-        public static void AddSong(Sound newsong)
+        public static void AddSongToPlayList(Sound newsong, string playlistName)
         {
-            allSongs.Add(newsong);
+            foreach(PlayList playlist in allPlayLists)
+            {
+                if (playlist.Name.Equals(playlistName))
+                {
+                    playlist.SongList.Add(newsong);
+                }
+            }
         }
 
         public static void AddPlayList(PlayList newPlayList)

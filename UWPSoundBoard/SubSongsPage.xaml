@@ -21,11 +21,11 @@
             <TextBlock Name="CategoryTextBlock"  FontSize="28"/>
 
             <ListView Grid.Row="1"
-                        Name="SoundGridView"
+                        Name="SoundListView"
                         SelectionMode="None"
                         IsItemClickEnabled="True"
                         ItemsSource="{x:Bind sounds}"
-                        ItemClick="SoundGridView_ItemClick"
+                        ItemClick="SoundListView_ItemClick"
                         HorizontalAlignment="Left"  >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="data:Sound">
@@ -76,17 +76,9 @@
                                                VerticalAlignment="Center"
                                                FontSize="12 ">
                                         </TextBlock>
-                                        <Button Content="Add To Playlist" x:Name="HoverButton" 
+                                        <Button Content="Delete From Playlist" x:Name="HoverButton" 
                                                   IsTabStop="False" HorizontalAlignment="Right" 
                                                   Visibility="Collapsed" Command="{x:Bind Command}">
-                                            <Button.Flyout>
-                                                <MenuFlyout>
-                                                    <MenuFlyoutItem Text="Create New Playlist"/>
-                                                    <MenuFlyoutSubItem Text="Add to Playlist">
-                                                        <MenuFlyoutItem Text="AAA"/>
-                                                    </MenuFlyoutSubItem>
-                                                </MenuFlyout>
-                                            </Button.Flyout>
                                         </Button>
                                     </StackPanel>
                                 </SwipeControl>

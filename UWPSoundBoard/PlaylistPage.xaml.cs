@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicLibrary.Model;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -79,15 +80,19 @@ namespace MusicLibrary
         private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
         {
 
-            if (PlayLists.SelectedValue != null)
+            if (PlayListsListView.SelectedValue != null)
             {
-                string item = PlayLists.SelectedValue.ToString();
+                string item = PlayListsListView.SelectedValue.ToString();
                 DataSource.DeletePlayList(item);
             }
         }
-        private void PlayLists_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
+        private void PlayListsListView_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            ListViewItem item = sender as ListViewItem;
+            
+            //var playlist = (PlayList)e;
+            this.Frame.Navigate(typeof(SubSongsPage), sender);
         }
     }
 }

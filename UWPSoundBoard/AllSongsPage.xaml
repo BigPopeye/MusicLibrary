@@ -18,7 +18,7 @@
         
         </Grid.RowDefinitions>
 
-        <MediaElement Name="MyMediaElement" AutoPlay="True"/>
+        <MediaElement Name="MyMediaElement" AutoPlay="False"/>
         <TextBlock Name="CategoryTextBlock" 
                    Text="All Songs" 
                    FontSize="40" 
@@ -39,88 +39,82 @@
         </ListView>
 
         <ListView Grid.Row="1"
-                        Name="SoundGridView"
-                        SelectionMode="None"
-                        IsItemClickEnabled="True"
-                        ItemsSource="{x:Bind sounds}"
-                        ItemClick="SoundGridView_ItemClick"
-                        HorizontalAlignment="Left"  >
+                Name="SoundListView"
+                IsItemClickEnabled="True"
+                SelectionMode="Single"
+                ItemsSource="{x:Bind sounds}"
+                SelectedItem= "{Binding SelectedItem}" SelectedValuePath="Name" 
+                ItemClick="SoundListView_ItemClick"
+                HorizontalAlignment="Left"  >
             <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="data:Sound">
-                    <UserControl PointerEntered="ListViewSwipeContainer_PointerEntered" PointerExited="ListViewSwipeContainer_PointerExited">
-                        <Grid>
-                            <VisualStateManager.VisualStateGroups>
-                                <VisualStateGroup x:Name="HoveringStates">
-                                    <VisualState x:Name="HoverButtonsHidden" />
-                                    <VisualState x:Name="HoverButtonsShown">
-                                        <VisualState.Setters>
-                                            <Setter Target="HoverButton.Visibility" Value="Visible" />
-                                        </VisualState.Setters>
-                                    </VisualState>
-                                </VisualStateGroup>
-                            </VisualStateManager.VisualStateGroups>
-                            <SwipeControl>
-                                 <StackPanel Orientation="Horizontal">
-                                 <Ellipse Width="35" Height="35" Margin="20,20,0,0">
-                                    <Ellipse.Fill>
-                                        <ImageBrush ImageSource="{x:Bind ImageFile}"/>
-                                    </Ellipse.Fill>
-                                 </Ellipse>
-
-                                 <TextBlock Text="{x:Bind Name}" 
-                                               Margin="20,20,0,0"
-                                               Width="200"
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
-                                 </TextBlock>
-
-                                <TextBlock Text="{x:Bind Artist}" 
-                                                        Margin="20,20,0,0"
-                                                        Width="200" 
-                                                        Height="20"
-                                                        VerticalAlignment="Center" 
-                                                        FontSize="12">
-                                </TextBlock>
-
-                                <TextBlock Text="{x:Bind Album}" 
-                                                        Margin="20,20,0,0"
-                                                        Width="200" 
-                                                        Height="20"
-                                                        VerticalAlignment="Center" 
-                                                        FontSize="12">
-                                </TextBlock>
-
-                                <TextBlock Text="{x:Bind Category}" 
-                                                        Margin="20,20,0,0"
-                                                        Width="125" 
-                                                        Height="20"
-                                                        VerticalAlignment="Center"
-                                                        FontSize="12 ">
-
-                                </TextBlock>
-                                <Button Content="Add To Playlist" x:Name="HoverButton" 
-                                                IsTabStop="False" HorizontalAlignment="Right" 
-                                                Visibility="Collapsed" Command="{x:Bind Command}"
-                                        Click="HoverButton_Click">
-                                    <!--Button.Flyout>
-                                        <MenuFlyout>
-                                            <MenuFlyoutItem x:Name="MenuAddPlaylist" Text="Create New Playlist" Click="MenuAddPlaylist_Click"/>
-                                            <MenuFlyoutSubItem Text="Add to Playlist" >
-                                                <MenuFlyoutItem x:Name="PlaylistFlyout">
-                                                </MenuFlyoutItem>
-                                            </MenuFlyoutSubItem>
-                                        </MenuFlyout>
-                                    </Button.Flyout>-->
-                                </Button>
-
-                                </StackPanel>
-                            </SwipeControl>
+                  <DataTemplate x:DataType="data:Sound">
+                        <UserControl PointerEntered="ListViewSwipeContainer_PointerEntered" PointerExited="ListViewSwipeContainer_PointerExited">
                             
-                        </Grid>
-                    </UserControl>
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="HoveringStates">
+                                        <VisualState x:Name="HoverButtonsHidden" />
+                                        <VisualState x:Name="HoverButtonsShown">
+                                            <VisualState.Setters>
+                                                <Setter Target="HoverButton.Visibility" Value="Visible" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            <SwipeControl>
+                                <StackPanel Orientation="Horizontal">
+                                    <AppBarButton x:Name="PalySong" Icon="Play" Click="PalySong_Click">
+                                       
+                                    </AppBarButton>
+                                        <Ellipse Width="35" Height="35" Margin="20,20,0,0">
+                                            <Ellipse.Fill>
+                                                <ImageBrush ImageSource="{x:Bind ImageFile}"/>
+                                            </Ellipse.Fill>
+                                         </Ellipse>
 
-                   
+                                        <TextBlock Text="{x:Bind Name}" 
+                                                       Margin="20,20,0,0"
+                                                       Width="200"
+                                                       Height="20"
+                                                       VerticalAlignment="Center" 
+                                                       FontSize="12">
+                                         </TextBlock>
+
+                                        <TextBlock Text="{x:Bind Artist}" 
+                                                                Margin="20,20,0,0"
+                                                                Width="200" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center" 
+                                                                FontSize="12">
+                                        </TextBlock>
+
+                                        <TextBlock Text="{x:Bind Album}" 
+                                                                Margin="20,20,0,0"
+                                                                Width="200" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center" 
+                                                                FontSize="12">
+                                        </TextBlock>
+
+                                        <TextBlock Text="{x:Bind Category}" 
+                                                                Margin="20,20,0,0"
+                                                                Width="125" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center"
+                                                                FontSize="12 ">
+
+                                        </TextBlock>
+                                        <Button Content="Add To Playlist" x:Name="HoverButton" 
+                                                    IsTabStop="False" HorizontalAlignment="Right" 
+                                                    Visibility="Collapsed" 
+                                            Click="HoverButton_Click">
+                                         </Button>
+
+                                    </StackPanel>
+                                </SwipeControl>
+                            
+                            </Grid>
+                        </UserControl>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
