@@ -42,6 +42,17 @@ namespace MusicLibrary
             }
         }
 
+        public static void DeleteSongFromPlaylist(Sound song, string playlistName)
+        {
+            foreach (PlayList playlist in allPlayLists)
+            {
+                if (playlist.Name.Equals(playlistName))
+                {
+                    playlist.SongList.Remove(song);
+                }
+            }
+        }
+
         public static void AddPlayList(PlayList newPlayList)
         {
             allPlayLists.Add(newPlayList);
@@ -49,7 +60,6 @@ namespace MusicLibrary
 
         public static void DeletePlayList(string nameToDelete)
         {
-            //allPlayLists.Remove(playlistobject);
             PlayList objectToDelete = null;
             foreach (PlayList p in allPlayLists)
             {
@@ -64,6 +74,12 @@ namespace MusicLibrary
             return;
         }
 
-       
+        public static void GetSoundsByPlaylist(ObservableCollection<Sound> sounds, PlayList playList)
+        {
+            sounds.Clear();
+            var listSounds = playList.SongList;
+            listSounds.ForEach(s => sounds.Add(s));
+        }
+
     }
 }

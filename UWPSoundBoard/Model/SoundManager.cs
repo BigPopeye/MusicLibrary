@@ -44,5 +44,7 @@ namespace MusicLibrary.Model
             sounds.Clear();
                 filteredSounds.ForEach(s => sounds.Add(s));
         }
+
+        
     }
 }

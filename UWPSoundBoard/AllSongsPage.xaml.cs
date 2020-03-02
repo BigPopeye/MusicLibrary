@@ -140,11 +140,5 @@ namespace MusicLibrary
             }
             
         }
-
-        private void PalySong_Click(object sender, RoutedEventArgs e)
-        {
-            //var sound = (Sound)e;
-            //MyMediaElement.Source = new Uri(this.BaseUri, sound.AudioFile);
-        }
     }
 }

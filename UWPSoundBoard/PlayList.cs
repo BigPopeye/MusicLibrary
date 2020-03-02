@@ -16,7 +16,11 @@ namespace MusicLibrary
         public ICommand Command { get; set; }
         public string Name { get; set; }
 
-
+        public PlayList()
+        {
+            Name = null;
+            SongList = new List<Sound>();
+        }
         public PlayList(string name)
         {
             Name = name;

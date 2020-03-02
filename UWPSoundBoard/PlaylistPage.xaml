@@ -38,24 +38,14 @@
         </Grid>
         <StackPanel Margin="0,10,0,0" Grid.Row="1">
             <ListView x:Name="PlayListsListView"
-                ItemsSource="{x:Bind playlists}"
-                  SelectedItem= "{Binding SelectedItem.Content}" SelectedValuePath="Name"
-                      IsDoubleTapEnabled="True"
-                      DoubleTapped="PlayListsListView_DoubleTapped">
+                        ItemsSource="{x:Bind playlists}"
+                      IsItemClickEnabled="True"
+                      ItemClick="PlayListsListView_ItemClick"
+                      >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="local:PlayList">
                         <UserControl PointerEntered="ListViewSwipeContainer_PointerEntered" PointerExited="ListViewSwipeContainer_PointerExited">
                             <Grid>
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup x:Name="HoveringStates">
-                                        <VisualState x:Name="HoverButtonsHidden" />
-                                        <VisualState x:Name="HoverButtonsShown">
-                                            <VisualState.Setters>
-                                                <Setter Target="HoverButton.Visibility" Value="Visible" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
                                 <SwipeControl>
                                     <Grid>
                                         <Grid.ColumnDefinitions>
@@ -63,14 +53,8 @@
                                             <ColumnDefinition Width="100"/>
                                         </Grid.ColumnDefinitions>
                                         <TextBlock Grid.Column="0" x:Name="textbox1" Text="{x:Bind Name}"/>
-                                        <Button Grid.Column="1" Content="Delete" x:Name="HoverButton"
-                                                Click="DeletePlaylistButton_Click"
-                                                IsTabStop="False" HorizontalAlignment="Right" 
-                                                Visibility="Collapsed" Command="{x:Bind Command}">
-                                        </Button>
                                     </Grid>
                                 </SwipeControl>
-
                             </Grid>
                         </UserControl>
                     </DataTemplate>

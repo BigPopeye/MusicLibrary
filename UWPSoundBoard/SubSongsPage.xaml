@@ -12,20 +12,47 @@
     <Grid>
         <Grid Margin="20,20,0,0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" 
+                           MinHeight="110"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
+            
             <MediaElement Name="MyMediaElement" AutoPlay="True"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Name="PlaylistTextBlock" 
+                   FontSize="40" 
+                   FontWeight="Thin"                             
+                   Margin="10,0,0,0" 
+                   VerticalAlignment="Top" 
+                   Height="60"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="CategoryTextBlock2" Text="Song" FontSize="15" Margin="70,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                    <TextBlock Name="CategoryTextBlock3" Text="Artist" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                    <TextBlock Name="CategoryTextBlock4" Text="Album" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                    <TextBlock Name="CategoryTextBlock5" Text="Genre" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                </StackPanel>
 
-            <TextBlock Name="CategoryTextBlock"  FontSize="28"/>
+                <Button Grid.Column="1" x:Name="DeletePlayList"
+                    Content="Delete"
+                    Click="DeletePlayList_Click"
+                    Width="88"
+                    Height="44"
+                    />
+            </Grid>
+            
 
+            
             <ListView Grid.Row="1"
                         Name="SoundListView"
-                        SelectionMode="None"
+                        SelectionMode="Single"
                         IsItemClickEnabled="True"
                         ItemsSource="{x:Bind sounds}"
                         ItemClick="SoundListView_ItemClick"
+                        SelectedItem= "{Binding SelectedItem}" SelectedValuePath="Name" 
                         HorizontalAlignment="Left"  >
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="data:Sound">
@@ -36,49 +63,55 @@
                                         <VisualState x:Name="HoverButtonsHidden" />
                                         <VisualState x:Name="HoverButtonsShown">
                                             <VisualState.Setters>
-                                                <Setter Target="HoverButton.Visibility" Value="Visible" />
+                                                <Setter Target="DeleteButton.Visibility" Value="Visible" />
                                             </VisualState.Setters>
                                         </VisualState>
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
                                 <SwipeControl>
-                                    <StackPanel Orientation="Horizontal"  Height="100" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="&#xE768;" FontFamily="Segoe MDL2 Assets" TextAlignment="Center" VerticalAlignment="Center"/>
                                         <Ellipse Width="35" Height="35" Margin="20,20,0,0">
                                             <Ellipse.Fill>
                                                 <ImageBrush ImageSource="{x:Bind ImageFile}"/>
                                             </Ellipse.Fill>
                                         </Ellipse>
+
                                         <TextBlock Text="{x:Bind Name}" 
-                                               Margin="20,20,0,0"
-                                               Width="200"
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
+                                                       Margin="20,20,0,0"
+                                                       Width="200"
+                                                       Height="20"
+                                                       VerticalAlignment="Center" 
+                                                       FontSize="12">
                                         </TextBlock>
+
                                         <TextBlock Text="{x:Bind Artist}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
+                                                                Margin="20,20,0,0"
+                                                                Width="200" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center" 
+                                                                FontSize="12">
                                         </TextBlock>
+
                                         <TextBlock Text="{x:Bind Album}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center" 
-                                               FontSize="12">
+                                                                Margin="20,20,0,0"
+                                                                Width="200" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center" 
+                                                                FontSize="12">
                                         </TextBlock>
+
                                         <TextBlock Text="{x:Bind Category}" 
-                                               Margin="20,20,0,0"
-                                               Width="200" 
-                                               Height="20"
-                                               VerticalAlignment="Center"
-                                               FontSize="12 ">
+                                                                Margin="20,20,0,0"
+                                                                Width="125" 
+                                                                Height="20"
+                                                                VerticalAlignment="Center"
+                                                                FontSize="12 ">
+
                                         </TextBlock>
-                                        <Button Content="Delete From Playlist" x:Name="HoverButton" 
+                                        <Button Content="Delete From Playlist" x:Name="DeleteButton" 
                                                   IsTabStop="False" HorizontalAlignment="Right" 
-                                                  Visibility="Collapsed" Command="{x:Bind Command}">
+                                                  Visibility="Collapsed" Click="DeleteButton_Click">
                                         </Button>
                                     </StackPanel>
                                 </SwipeControl>

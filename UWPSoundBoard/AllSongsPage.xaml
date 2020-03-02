@@ -27,7 +27,6 @@
                    VerticalAlignment="Top" 
                    Height="60"/>
                    
-        <ListView Grid.Row="0">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Name="CategoryTextBlock2" Text="Song" FontSize="15" Margin="70,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
                 <TextBlock Name="CategoryTextBlock3" Text="Artist" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
@@ -35,10 +34,7 @@
                 <TextBlock Name="CategoryTextBlock5" Text="Genre" FontSize="15" Margin="20,80,0,0" Width="200" VerticalAlignment="Center" FontWeight="SemiBold"/>
             </StackPanel>
 
-
-        </ListView>
-
-        <ListView Grid.Row="1"
+            <ListView Grid.Row="1"
                 Name="SoundListView"
                 IsItemClickEnabled="True"
                 SelectionMode="Single"
@@ -63,10 +59,7 @@
                                 </VisualStateManager.VisualStateGroups>
                             <SwipeControl>
                                 <StackPanel Orientation="Horizontal">
-                                    <AppBarButton x:Name="PalySong" Icon="Play" Click="PalySong_Click">
-                                       
-                                    </AppBarButton>
-                                        <Ellipse Width="35" Height="35" Margin="20,20,0,0">
+                                    <Ellipse Width="35" Height="35" Margin="20,20,0,0">
                                             <Ellipse.Fill>
                                                 <ImageBrush ImageSource="{x:Bind ImageFile}"/>
                                             </Ellipse.Fill>

@@ -32,14 +32,6 @@
                     <DataTemplate x:DataType="data:Sound">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock/>
-                            <!--<HyperlinkButton Grid.Column="0" x:Name="Button_one" Click="Button_one_Click">
-                                <Image Name="My Image" Source="{x:Bind IconFile}"
-                                Height="80"
-                                Width="80"
-                                Margin="20,20,60,10"/>
-                            </HyperlinkButton>
-                            <TextBlock Text="{x:Bind Category}"/>
-                            <HyperlinkButton/>-->                            
                         </StackPanel>
                     </DataTemplate>
                 </GridView.ItemTemplate>
@@ -136,19 +128,6 @@
                     </StackPanel>
                 </Button>
             </GridView>
-            <!--<GridView Grid.Column="4">
-            <HyperlinkButton Click="Button_one_Click">
-                    <StackPanel>
-                        <TextBlock>Pop</TextBlock>
-                        <Image Source="Assets/Icons/pop.jpg"
-                                Height="80"
-                                Width="80"
-                                />
-                    </StackPanel>
-                </HyperlinkButton>
-                            <TextBlock Text="Pop"/><Button />
-                            <HyperlinkButton/>
-            </GridView>-->
         </Grid>
     </Grid>
 </Page>

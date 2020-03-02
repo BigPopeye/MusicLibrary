@@ -87,12 +87,11 @@ namespace MusicLibrary
             }
         }
 
-        private void PlayListsListView_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+
+        private void PlayListsListView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            ListViewItem item = sender as ListViewItem;
-            
-            //var playlist = (PlayList)e;
-            this.Frame.Navigate(typeof(SubSongsPage), sender);
+            var playlist = (PlayList)e.ClickedItem;
+            this.Frame.Navigate(typeof(SubSongsPage), playlist);
         }
     }
 }

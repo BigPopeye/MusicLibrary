@@ -26,18 +26,19 @@ namespace MusicLibrary
     public sealed partial class SubSongsPage : Page
     {
         public ObservableCollection<Sound> sounds;
-        public SoundCategory genre;
+        public PlayList playlist;
         public SubSongsPage()
         {
             this.InitializeComponent();
             sounds = new ObservableCollection<Sound>();
-            SoundManager.GetSoundsByCategory(sounds, genre);
+            playlist = new PlayList();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var playlist = (PlayList)e.Parameter;
-            
+            playlist = (PlayList)e.Parameter;
+            DataSource.GetSoundsByPlaylist(sounds, playlist);
+            PlaylistTextBlock.Text = playlist.Name;
             base.OnNavigatedTo(e);
         }
         private void SoundListView_ItemClick(object sender, ItemClickEventArgs e)
@@ -58,6 +59,23 @@ namespace MusicLibrary
         private void ListViewSwipeContainer_PointerExited(object sender, PointerRoutedEventArgs e)
         {
             VisualStateManager.GoToState(sender as Control, "HoverButtonsHidden", true);
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(SoundListView.SelectedItem != null)
+            {
+                var songToDel = (Sound)SoundListView.SelectedItem;
+                var playlistName = PlaylistTextBlock.Text;
+                DataSource.DeleteSongFromPlaylist(songToDel, playlistName);
+                DataSource.GetSoundsByPlaylist(sounds, playlist);
+            }
+        }
+
+        private void DeletePlayList_Click(object sender, RoutedEventArgs e)
+        {
+            DataSource.DeletePlayList(PlaylistTextBlock.Text);
+            this.Frame.GoBack();
         }
     }
 }
