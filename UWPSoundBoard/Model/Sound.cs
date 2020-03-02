@@ -26,7 +26,6 @@ namespace MusicLibrary.Model
         public string ImageFile { get; set; }
         public ICommand Command { get; set; }
         
-        Guid songID;
 
         public Sound(string name, SoundCategory category)
         {
@@ -45,10 +44,6 @@ namespace MusicLibrary.Model
             Category = category;
             AudioFile = $"/Assets/Audio/{category}/{name}.mp3";
             ImageFile = $"/Assets/Images/{category}/{name}.png";
-        }
-        public Guid getSongID()
-        {
-            return songID;
         }
     }
 }

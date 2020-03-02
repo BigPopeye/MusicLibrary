@@ -28,7 +28,6 @@ namespace MusicLibrary
     {
         private ObservableCollection<Sound> sounds;
         private ObservableCollection<PlayList> playlists;
-        //DataSource currentDataSource;
         string p;
 
         public AllSongsPage()
@@ -38,7 +37,6 @@ namespace MusicLibrary
             playlists = new ObservableCollection<PlayList>();
             DataSource.getAllPlayLists(ref playlists);
             SoundManager.GetAllSounds(sounds);
-            //currentDataSource = new DataSource(); 
             
         }
         private void SoundListView_ItemClick(object sender, ItemClickEventArgs e)

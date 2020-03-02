@@ -32,7 +32,6 @@ namespace MusicLibrary
             this.InitializeComponent();
             playlists = new ObservableCollection<PlayList>();
             DataSource.getAllPlayLists(ref playlists);
-            //currentDataSource = new DataSource();
         }
         private async void AddPlaylistButton_Click(object sender, RoutedEventArgs e)
         {
@@ -77,15 +76,6 @@ namespace MusicLibrary
             VisualStateManager.GoToState(sender as Control, "HoverButtonsHidden", true);
         }
 
-        private void DeletePlaylistButton_Click(object sender, RoutedEventArgs e)
-        {
-
-            if (PlayListsListView.SelectedValue != null)
-            {
-                string item = PlayListsListView.SelectedValue.ToString();
-                DataSource.DeletePlayList(item);
-            }
-        }
 
 
         private void PlayListsListView_ItemClick(object sender, ItemClickEventArgs e)
